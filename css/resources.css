@@ -1,0 +1,176 @@
+.editorial-boarder {width: 100%;height: auto;}
+.explanation {width: 100%;height: 40px;border-bottom: 1px solid grey;}
+.explanation h2 {text-align: center; padding-top: 5px;color: #8b5791;font-family: serif;}
+.editorial-body {width: 100%; height: auto;}
+.explaine-body {font-weight: 400;color: rgb(87,104,113);}
+.explaine-body span {float: left; padding: 5px 0px 0px 5px;}
+.tested {width: 100%; height: 40px;border-bottom: 1px solid deeppink;}
+.tested h2{text-align: center; padding-top: 5px;color: #8b5791;font-family: serif;}
+.tested-body {width: 100%; height: auto;}
+.image-style {width: 30px;height: 30px;border-radius: 50px;float: left;}
+.explaine-body span#nameByeditorial {font-size: 15px; color: #0c5460;font-weight: 400;}
+.explaine-body span#byEditorial {color: grey;font-weight: 400;padding-left: 10px;}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 230px;
+    height: auto;
+    background-color: snow;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    right: 10%;
+    left: 20%;
+    margin-left: -40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    margin-left: -15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rosybrown transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.editorial-page {width: 98%;height: auto;margin: 15px;display: block;overflow: visible;}
+.editorial-left-part {width: 74%; height: auto; margin: 10px; float: left;display: block;overflow: hidden;overflow: visible;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);}
+.editorial-right-part { width: 22.6%; height: auto; margin: 10px; float: right;display: block;overflow: hidden;overflow: visible;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);}
+#bgColor {background: #e2e8e9; }
+.editorial-table-body {width: 100%;height: auto;display: block;overflow: visible;}
+
+.explaine-part { width: 96%; height: auto;margin: 15px;}
+
+.editorial-details-page {box-sizing: border-box;
+    margin: 0 auto;
+    width: 1270px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: visible;
+    display: block;height: 1950px;}
+
+.right-info {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+    font-size: 16px;
+}
+.editorialByName {margin: 10px 0px 5px 5px;flex: 1;float: left;}
+.editorialByName a{text-decoration: none;}
+.problem-explaine {margin: 20px 5px 20px 15px;}
+.problem-explaine p, li {font-size: 14px; font-weight: 400;color:#576871;line-height: 2; text-align: justify;}
+.problem-explaine ol {margin-left: 20px;}
+.editorial-info {display: flex;margin-top: 10px;}
+.editorial-heading {flex: 1;font-weight: 400;font-size: 13px;color:#727292;}
+.editorial-text {flex: 1;font-size: 14px;margin-top: -1px;/*text-align: right;*/}
+.right-info p {margin-top: 10px; font-size: 14px;}
+.right-info p span#bestSolution {color:#435456;}
+span#byName {color:#50a8b4;font-size: 16px;text-decoration: none;}
+#byName a {text-decoration: none;}
+button.editorialHelp {margin: 10px 15px 10px 0;width: 100px;background: #fff;color:#161c1d;box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.5);}
+
+.editorial-code {margin: 15px;}
+/*.code-part {background:#ebdfec ;padding: 15px;color: #4e555b;line-height: 20px;overflow-x: auto;font-size: 14px; }*/
+pre {
+    color: #0e141e;
+    background-color:#e9ecdf ;
+    font-size: 14px;
+    line-height: 10px;
+    padding: 5px;
+    border: none;
+    overflow-x: auto;
+}
+.c1 {padding: 20px;display: inline-block;color: grey;}
+.editorial-p {display: flex;width: 100%;height: 80px;}
+.like-unlike {flex: 1; float: right;margin: 10px 0px 5px 5px; }
+
+select#selectNew {
+    width: 60%;
+    padding: 6px 12px;
+    margin: 2px 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    color: #3399ff;
+}
+button#apply {
+    width: 30%;
+    padding: 6px 12px;
+    margin: 2px 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    color: #009900;
+}
+button#apply:hover {background:#3399ff;color:white;}
+.short-info {}
+.short-info p {color:#21212b;padding-top: 5px;}
+
+select#selectNew:hover {
+    border: 0.5px solid green;
+}
+
+.like {height: 32px;width: 25%;background: #ff4da6;float: right; color: white;}
+.like:hover{background: white;color: #ff4da6;}
+.dislike{height: 32px;width: 25%;background: #4d1933;float: right;color: #ffff4d;}
+.dislike:hover {background: #ffff4d;color:#4d1933;}
+#disL{padding: 6px 10px;}
+#lik {padding: 6px 10px;}
+#demo span {float: none;}
+
+.topic-name {padding-left: 10px;font-size: 22px;color: #3939ac; margin: 10px;}
+.userNameTopic {font-size: 16px;color: #ac5639;}
+.codeArea {border: 1px solid #CCC;background-color: #e9ecdf;padding: 10px;}
+code {height: 40px;}
+.kwd {color: #008;}
+.com {color: #800;}
+.str {color: #080;}
+.pun, .opn, .clo {color: #660;}
+.com {color: #800;}
+.lit {color: #066;}
+.pln {
+    color: #252c33;
+    padding-left: 10px;
+}
+.more-topics {width: 100%; height: 40px;border-bottom: 1px solid #3973ac; border-top: 1px solid #3973ac; text-align: center;padding-top: 5px; color: #73ac39;}
+.more-topics h2 {}
+.topic-name span.sp1{padding: 10px 0px 10px 0px;}
+.topic-name span span.byName {font-size: 16px; font-weight: 400; color: grey;}
+.topic-name span span.topicAuthorName a{text-decoration: none;}
+.short-info-author {font-size: 16px;text-align: justify;padding: 10px;}
+.author-info {margin-top:10px;font-size: 16px;}
+.author-info span.info-style {padding-top: 10px;}
+.author-info span span.numContribute {color: #39ac39;}

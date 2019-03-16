@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-page {width: 100%;height:auto;background: lavenderblush;}
+.main-row {width: 98%;margin: 10px;text-align: center;display: block;}
+
+.table-title {color: violet;}
+.total_points {color: #330000;}
+.total_soutions {color: #1a0000; }
+.total_winning {color: #000000;}
+
+.total_points:hover {font-size:18px;color: #556B2F;}
+.total_soutions:hover {font-size:18px;color: #008B8B; }
+.total_winning:hover {font-size:18px;color: #6A5ACD;}
+/* full screen table */
+.table {width: 100%;background-color: transparent;border-collapse: collapse;border-spacing: 0;}
+.table-box {width: 80%;margin: 20px 40px 20px 140px;}
+/*border: .5px solid gray;*/
+.table-content {width: 100%;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 14px;line-height: 20px;color: #333;}
+.table-headding {font-size: 16px;color: #117a8b;}
+.table-hover:hover {font-size: 18px;color:  #ff6699;}
+.table-data {padding-top: 15px;}
+.table-data a {text-decoration: none;}
+.table-data a:hover { font-size: 18px;color: #71dd8a;}
+.table-bordered {border: 1px solid #ddd;border-collapse: separate; *border-collapse: collapse;border-left: 0;border-right:0;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.user_name {color: #008080;}
+/* half screen table */
+
+.half-table {width: 100%;background-color: transparent;border-collapse: collapse;border-spacing: 0;}
+.half-table-box {width: 85%;margin: 10px 20px 10px 50px;}
+.half-table-content {width: 100%;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 13px;line-height: 18px;color: #333;}
+.half-table-headding {font-size: 14px;color: #3d91f2;}
+.half-table-data {padding-top: 13px;}
+.half-table-data a {text-decoration: none;}
+.half-table-data a:hover { font-size: 18px;color: #4B0082;}
+.table-headding-hover:hover {font-size: 18px;color: #8b5791;}
+
+.left-row {float: left;width: 49%;height:auto;margin: 10px;border-radius: 5px;text-align: center;display: block;}
+.right-row {width: 49%;height:auto;margin: 10px;border-radius: 5px;text-align: center;display: block;overflow-x: hidden;padding-top: 10px;}
+
+.left-nav span.active-page{opacity: 1; color: white;}

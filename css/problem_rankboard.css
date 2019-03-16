@@ -1,0 +1,122 @@
+.solution-static-part {width: 70%;height: 470px;border: 1px solid darkgray; border-radius: 5px;float: left;display: inline-block;overflow: hidden;}
+.language-static-part {width: 28%;height: auto;border: 1px solid darkgray; border-radius: 5px;float: right;display: block;overflow: hidden;}
+
+.solution-left-static-part {width: 68%;height: auto;float: left;display: inline-block;margin: 35px 5px 5px 5px ;}
+.solution-right-static-part {width: 29%;height: auto;float: right;display: inline-block;margin: 5px;}
+.language-up-static-part {width: 100%;height:auto;float: left;display: inline-block;margin-top: 5px;border-bottom: #BBB solid 1px;}
+.language-down-static-part {width: 100%;height: auto;float: right;display: inline-block;margin-bottom: 10px;}
+.language-static-part h3,.solution-static-part h3 {background: #f3f3f3;border-bottom: #BBB solid 1px;font-size: 13px;font-weight: 700;margin: 0 auto;padding: 7px 0;text-align: center;
+    text-transform: uppercase;}
+
+#solution-info {margin: 10px;height: auto;}
+.type-details {line-height: 30px;padding-top: 55px;font-size: 14px;padding-left: 10px;}
+
+ol, ul {list-style: none;}
+
+.type-details span {border-radius: 2px;display: inline-block;height: 10px;margin: 0 8px 0 0;width: 10px;}
+
+.language-down-static-part dl {line-height: 20px;padding: 10px 10px;font-size: 16px;}
+
+.language-down-static-part dt {font-weight: 600;float: left;width: 140px;padding-left: 10px;}
+
+.language-down-static-part dd {float: right;text-align: right;width: 45px;padding-right: 65px;}
+
+.problem-rank {width: 98%;height: auto;margin: 15px;display: block;overflow: visible;}
+
+.problem-rank-body {width: 98%;height: auto;margin: 15px;display: block;overflow: visible;border: 1px solid darkslategrey;border-radius: 5px;}
+
+.rank-part {}
+
+table {width: 100%;border-collapse: collapse;border-spacing: 4px;padding: 0;}
+thead {height: 40px; font-size: 16px;}
+tbody {}
+th {background:     #6d8caf    ;
+    border-top: #BBB solid 1px;
+    vertical-align: middle;
+    padding: 0 5px;
+    text-transform: uppercase;}
+tr {height: 50px;border: 0.2px solid  #e5e8e8;}
+td {text-align: center;width: 10%;vertical-align: middle;padding: 0 5px;}
+td.small , td.id {text-align: center;width: 10%;}
+td.medium {text-align: center;width: 15%;}
+td.large {text-align: center;width: 20%; position: relative;}
+td.center {text-align: center;}
+td a {text-decoration: none;font-size: 16px;color: darkslategrey;display: inline-block;}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 230px;
+    height: 270px;
+    background-color: rosybrown;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    right: 10%;
+    margin-left: -40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    margin-left: -15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rosybrown transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+td.large .user_info{
+    display: none;
+    width: 250px;
+    height: 270px;
+    top: 1%;
+    left: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+    position: fixed;
+    text-align: justify;
+    margin: 15px;
+}
+
+.large:hover .user_info {display: block;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rosybrown;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.short-info {padding: 10px;}
+.short-info p {color: darkslategrey;padding-top: 5px;}

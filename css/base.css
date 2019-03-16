@@ -1,0 +1,154 @@
+*{margin: 0;padding: 0;outline: 0}
+
+body {
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    color: black;
+}
+.pauoj {
+    min-width: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pauoj-header {
+    width: 100%;
+    height: 50px;
+    background: #4e555b none repeat scroll 0 0;
+    overflow: hidden;
+}
+.pauoj-nav {
+    background: #39424e none repeat scroll 0 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+.pauoj-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-left {
+    float: left;
+    overflow: hidden;
+    width: 50%;
+    height: 50px;
+    background: rgb(78, 85, 91) none repeat scroll 0 0;
+}
+
+.left-li {
+    display: block;
+    float: left;
+    margin: 9px;
+    padding: 5px 10px;
+}
+.right-li {
+    display: block;
+    float: right;
+    margin: 9px;
+    padding: 5px 10px;
+}
+.pauoj-nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Work Sans', Arial, sans-serif;
+    color: #b9bbbe;
+}
+.pauoj-nav ul li a:hover {
+    color: #f8f9fa;
+}
+.active {
+    color: #f8f9fa;
+}
+.nav-right {
+    float: right;
+    overflow: hidden;
+    width:50%;
+    height: 50px;
+    background: rgb(78, 85, 91) none repeat scroll 0 0;
+}
+
+
+/*.container {*/
+    /*align-items: center;*/
+    /*box-sizing: border-box;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*min-width: auto;*/
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+    /*margin: 0 auto;*/
+/*}*/
+.pauoj-logo {
+    float: left;
+    overflow: hidden;
+    margin: 5px;
+    padding-left: 60px;
+    width: 40px;
+    height: 40px;
+}
+#title {
+    font-size: 22px;
+    color: #20c997;
+    margin-left: 5px;
+    margin-top: 10px;
+    float: left;
+    text-decoration: none;
+    font-family: 'Work Sans', Arial, sans-serif;
+}
+
+/*a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {*/
+    /*display: block;*/
+    /*border: 0;*/
+    /*font: inherit;*/
+    /*margin: 0;*/
+    /*outline: 0;*/
+    /*padding: 0;*/
+    /*vertical-align: baseline;*/
+/*}*/
+.pauoj-main-content {
+    width: 100%;
+    height: auto;
+    background: #fff3cd;
+    overflow: hidden;
+}
+.left-content {
+    width: 65%;
+    height: auto;
+    background: #20c997 none repeat scroll 0 0;
+    overflow: hidden;
+    float: left;
+    padding: 10px 10px 10px 15px;
+    margin: 15px 15px 15px 60px;
+}
+.pauoj-main-content .right-content {
+    width: 20%;
+    height: auto;
+    background: #71dd8a none repeat scroll 0 0;
+    overflow: hidden;
+    float: right;
+    padding: 10px 10px 10px 15px;
+    margin: 15px 15px 15px 10px;
+}
+.pauoj-footer {
+    width: 100%;
+    height: 200px;
+    background: #0c5460 none repeat scroll 0 0;
+    padding: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+}
+.left-footer {
+
+}
+.middle-footer {
+
+}
+.right-footer {
+
+}

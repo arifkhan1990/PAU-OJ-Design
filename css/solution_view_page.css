@@ -1,0 +1,43 @@
+
+body {font-size: 14px;font-family: "Apple Color Emoji";}
+.code-part {width: 100%; height: auto;display: block;overflow: hidden;border: 1px solid grey;}
+.language-part {width: 100%;height: 40px;border-bottom: 1px solid grey;}
+.language-part p {font-size: 16px;margin: 10px 0px 0px 15px;font-weight: 400;float: left;}
+.language-part a {float: right;text-decoration: none;font-size: 16px;margin: 10px 15px 0px 0;font-weight: 400;color: #6610f2;}
+.code {margin: 30px;}
+
+.judgement-part {height: auto; margin: 5px 0px 10px 0px;display: block;overflow: hidden;}
+.judgement-part hr.hrleft {width: 40%; color: #6610f2;float: left;padding-top: 15px;}
+.judgement-part hr.hrleft {width: 40%; color: #6610f2;padding-top: 15px;}
+.judgement-part h2 {text-align: center;padding: 8px 0px 8px 0px;color: darkcyan;font-family: Cursive;}
+.judgement-part hr.hrright {width: 40%; color: #6610f2; float: right;padding-top: 15px;}
+.judgement-part span {font-size: 18px;padding-top: 15px;}
+.judgement-part hr.style15 {
+    display: block;
+    content: "Judgement";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: #8c8b8b;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+.testcase-part {margin-top:5px;height: auto; border: 1px solid sienna; border-radius: 5px;}
+.test-case {border-bottom: 1px solid grey;height: 50px;}
+.test-case h3 {padding: 6px 0px 0px 15px; font-weight: 500;}
+.test-case p {padding-left: 15px;padding-top:2px;color: #4e555b;}
+.input {border-bottom: 1px solid grey;height: auto;display: block;overflow: hidden;}
+.input-left {border-right: 1px solid grey;width: 100px;height: auto;float: left;}
+.input-left h4 {padding: 15%;}
+.input-right {padding: 10px 10px 10px 15px; float: left;}
+.user-output {border-bottom: 1px solid grey;height:  auto;display: block;overflow: hidden;}
+.user-output-left {border-right: 1px solid grey;width: 100px;height: auto;float: left;}
+.user-output-left h4 {padding: 15%;}
+.user-output-right {padding: 10px 10px 10px 15px; float: left;}
+.judge-output {border-bottom: 1px solid grey;height:  auto;display: block;overflow: hidden;}
+.judge-output-left {border-right: 1px solid grey;width: 100px;height: auto;float: left;}
+.judge-output-left h4 {padding: 15%;}
+.judge-output-right {padding: 10px 10px 10px 15px; float: left;}
+.compile-msg {height: 30px;}
+.compile-msg h3 {padding: 5px;font-weight: 500;color: black;}

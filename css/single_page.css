@@ -1,0 +1,161 @@
+* {box-sizing: border-box;margin: 0;padding: 0;font-family: 'Work Sans', Arial, sans-serif;}
+
+.problem-info {width: 100%;height: auto;background-color: #fff;box-shadow: .1px 1px 4px 0 #e7eeef;display: block;}
+.problem-content {box-sizing: border-box;margin: 0 auto;width: 1270px;padding-left: 20px;padding-right: 20px;overflow: hidden;display: block;}
+.left-content {width: 48%;height: auto;margin: 10px;float: left;display: block;}
+.right-content {width: 48%;height: auto;margin: 10px;float: right;display: block;}
+.problem-details {padding: 10px;height: auto;padding-left: 34px;}
+.problem-details span {font-weight: 100;opacity: 0.7;line-height: 1.5;}
+.extra-details {padding: 10px;}
+
+.resourses {width: 100%;height: auto;margin-top: 45px;}
+.resourses a{text-decoration: none;font-size: 16px;color: #ff99cc;}
+.rated {width: 100%;height: auto;margin-top: 5px;}
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+
+h1 { font-size: 2.3em; margin: 10px auto; }
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #ff0080;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #ff66b3;  }
+
+.download {width: 100%;height: auto;margin-top: 3px;color: #1e7e34;font-size: 18px;}
+
+.details-content {width: 100%;display: block;height: auto;margin-top: 15px;}
+.details-page {box-sizing: border-box;
+    margin: 0 auto;
+    width: 1270px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    display: block;height: auto;}
+.problem-navber {width: 98%;height: 50px;margin: 15px;display: block;overflow: hidden;}
+.problem-navber li {list-style: none;float: left;text-align: center;margin: 12px 30px 10px 25px;overflow: hidden;}
+.problem-navber li a {text-decoration: none;font-size: 22px;color: #ff6600;overflow: hidden;opacity: 0.6;}
+/*.problem-navber li a:hover {width:150px;height: 50px;font-size: 22px;border: 1px solid rebeccapurple; border-radius:5px;color: black;margin-top: 0px;background: #ff4dd2;}*/
+.problem-navber li a:hover {opacity: 1; color: #cc5200;}
+.problem-navber li a.active-page{opacity: 1; color: #cc5200;}
+
+.problem-description {width: 98%;height: auto;margin: 15px;display: block;overflow: hidden;}
+.problem-body-content {margin: 25px;display: block;overflow: hidden;}
+.description-part {font-size: 16px;font-weight: 200;color: #404040;line-height: 2;text-align: justify;letter-spacing: 1.5px;overflow: hidden;}
+.text-sty {padding-left: 25px;}
+.problem {}
+.problem table {
+    border-bottom: #BBB solid 1px;
+    border-collapse: collapse;
+    border-top: #BBB solid 1px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.problem table thead {
+    font-weight: bold;
+    text-align: center;
+}
+
+.problem table tbody td {
+    background-color: #e9f9e7;
+    border-bottom: #BBB solid 1px;
+    border-top: #BBB solid 1px;
+    padding: 5px 5px 2px 5px;
+    vertical-align: text-top;
+    width: 50%;
+
+}
+
+.division {
+
+    border-right: #BBB solid 1px;
+
+}
+
+.problem-page-header-part {width: 100%;height: auto;background-color: #fff;box-shadow: .1px 1px 4px 0 #e7eeef;display: block;}
+.problem-row-header-part {box-sizing: border-box;margin: 0 auto;width: 1270px;padding-left: 20px;padding-right: 20px;}
+.problem-header-part {color: darkgrey;font-size: 14px;text-align: left;padding-top: 10px;padding-left: 50px;}
+.problem-header-part a{text-decoration: none;color: darkgrey;}
+
+#tags1:hover {color : #9f88ee;}
+#tags2:hover {color : #9f88ee;}
+
+.editor-left-part {width: 60%; height: 200px; float: left;display: block;border: 1px solid saddlebrown;border-radius: 5px;}
+.editor-bar {border-bottom: 1px solid #e7eeef;
+    padding: 10px 0;align-items: center;
+    display: flex;
+    justify-content: space-between;}
+.left-bar, .right-bar {align-items: center;display: flex;}
+.editbar-manu {margin-right: 10px;min-width: 200px;}
+.select-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    border-radius: 4px;
+    border-spacing: 0;
+    color: #333;
+    cursor: default;
+    display: table;
+    height: 36px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.select-value {
+    bottom: 0;
+    color: #aaa;
+    left: 0;
+    line-height: 34px;
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+    text-overflow: ellipsis;
+    top: 0;
+    white-space: nowrap;
+
+}
+.Select-input {
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.editor-right-part {width: 40%; height: 200px; float: right;display: block;border: 1px solid saddlebrown;border-radius: 5px;}

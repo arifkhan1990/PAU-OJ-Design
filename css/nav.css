@@ -1,0 +1,91 @@
+*{margin: 0;padding: 0;outline: 0;box-sizing: border-box;}
+body {font-family: 'Work Sans', Arial, sans-serif;font-size: 14px;line-height: normal;}
+
+/*Navigation css here.......................................................................*/
+nav , .pauoj-navbar {max-width: 100%;height: 50px;background: Violet no-repeat;}
+.sticky {position: -webkit-sticky;position: sticky;}
+.pauoj-navbar ul {list-style: none;display: block}
+.left-nav {float: left;overflow: hidden; margin-left: 50px;}
+.pauoj-navbar ul li {float: left; display: inline-block;padding: 8px 15px 15px 15px;}
+.pauoj-navbar ul li a {font-size: 20px;text-decoration: none;display: block;text-align: center}
+.pauoj-navbar ul li a:hover {color: #fff;font-size: 22px;}
+.pauoj-navbar ul li a.active {color: #fff;font-size: 22px;}
+.right-nav {float: right; overflow: hidden;margin-right: 40px}
+.li-pos {float: right;}
+#logo {width: 40px;height: 40px;border-radius: 25px;float: left;margin:5px 0 5px 10px}
+#title {font-size: 24px;float: left;margin: 10px;color: #004085;font-family: Comic Sans MS;}
+#title:hover {font-size: 30px;color: whitesmoke;font-family: 'Work Sans', Arial, sans-serif;}
+#title:active {color: #f1b0b7;font-weight: lighter}
+/*.active {color: #6f42c1; font-family: Comic Sans MS; }*/
+.rank-icon {width: 25.7167px;height: 20px;}
+
+
+/*Main body content css here ..........................................................................*/
+
+main , .pauoj-content {max-width: 100%;height:700px;background-image: url(../images/bg1.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;}
+.row {max-width: 95%;height: 700px;margin: 0px 50px 0px 50px;align-items: center;}
+.main-content {max-width: 100%;height: 550px;padding: 10px;display: block;}
+.signup-content {float:left;width: 40%;height: auto;border-radius: 5px;padding: 20px;box-shadow: 16px 8px 16px 8px rgba(0,0,0,1);}
+.middle-content {width: 8%;height: auto;padding: 20px;}
+.login-content {width: 40%;height: auto;border-radius: 5px;padding: 20px;float: right;box-shadow: 16px 8px 16px 8px rgba(0,0,0,1);}
+input,textarea, select, button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.or_present {font-size: 26px;font-family: Comic Sans MS;color: violet;margin-top: 10px;text-align: center;}
+.group-control {width: 100%;height: auto;}
+.label-control {font-size: 20px;color: whitesmoke;}
+.button-block {background: #4CAF50;font-size: 18px;}
+.button-block:hover {color: floralwhite;font-size: 20px;background: #367c39;}
+.button-block:active {background: pink;font-size: 20px;color: black;}
+.first-or-not {width: 100%;height: 100px;color:  #f2ccff;font-size: 22px;padding: 25px 10px 15px 25px;}
+.first-or-not h3 {color:#ccd9ff;}
+
+/* Footer css here ..............................................................*/
+footer, .pauoj-footer {height: 300px;background: palevioletred; margin-top: 0px;}
+.footer-section {width: 100%;height: 150px;background: lightpink;}
+.pauoj-footer:after {content: "";display: table;clear: both;}
+.main-footer {width: 100%;height: 200px;background: palevioletred;margin-top: 0;margin-bottom: 0;}
+.footer-content { float: left;width: 33.33%;padding-left: 10px;text-align: justify;}
+.left-footer {padding: 10px 25px 10px 50px;}
+.middle-footer {padding: 10px 25px 10px 35px;}
+.right-footer {padding: 10px 40px 10px 35px;}
+footer h1 {color: #004085;text-align: center;font-family: Comic Sans MS;padding-bottom: 20px;padding-top: 10px;}
+footer h1:hover {color: deeppink;font-family: Work Sans;}
+.footer-content h3 {color: #2e2eb8;text-align: center;font-size: 18px;padding-bottom: 10px;}
+footer div p {text-align: center;color: #00264d;display: block;padding-bottom: 10px;}
+.left-footer a {text-decoration: none;font-size: 18px;display: block;padding: 0 10px 2px 90px;}
+.left-footer a:hover {font-size: 18px;display: block;padding: 0 10px 2px 30px;background: #9999ff;color: white;border-radius: 5px;}
+.footer-row {width: 100%;overflow: hidden;}
+.social-icon {float: left;width: 20%;font-size: 35px;padding: 10px 0px 2px 0px;}
+.social-icon a:hover {font-size: 60px;}
+.github {color: black;}
+.facebook {color: #4267B2;}
+.linkedin {color: #4875B4;}
+.youtube {color: #FF3333;}
+.twitter {color: #33CCFF;}
+.pinterest {color: red;}
+.google-plus {color: #C63D2D;}
+.instagram {color:  #fb3958;}
+.social-icon a:active {font-size: 60px;color: floralwhite;}
+
+/*End Footer css here ..................................................................*/
+
+/*@media screen and (max-width: 752px){*/
+    /*.pauoj-navbar ul li a {width: 100%;height: 50px;margin: 2px 0 0 0;background: Violet no-repeat;display: block;overflow: hidden;padding-right: 10px;}*/
+/*}*/
+.sp-footer {width: 100%; height: 50px;background: violet;}
+.sp-footer p {text-align: center;padding-top: 20px;}

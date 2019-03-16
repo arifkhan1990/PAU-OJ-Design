@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+.problem-page-header-part {width: 100%;height: 100px;background-color: #fff;box-shadow: .1px 1px 4px 0 #e7eeef;display: block;}
+.problem-row-header-part {box-sizing: border-box;margin: 0 auto;width: 1270px;padding-left: 20px;padding-right: 20px;}
+.header-part {color: darkgrey;font-size: 16px;text-align: left;padding-top: 10px;}
+.header-part a{text-decoration: none;color: darkgrey;}
+.header-part h1{text-decoration: none;color: Black;}
+
+hr {color: #71dd8a;opacity: .3;margin-bottom: 20px;}
+
+.problem-page-main-part {width: 100%;height: auto;background-color: #fff;box-shadow: .1px 1px 4px 0 #e7eeef;display: block;}
+.problem-row-main-part {box-sizing: border-box;margin: 0 auto;width: 1270px;padding-left: 20px;padding-right: 20px;overflow: auto;}
+
+
+.top-header-part {font-size: 14px;margin: 20px 20px 20px 0px;}
+.top-header-part a {text-decoration: none;opacity: .5;word-spacing: 20px;}
+.top-header-part span {opacity: .2;word-spacing: 20px;}
+.top-header-part a:hover {opacity: 1}
+
+.problem-left-containe {width: 69%;height:auto;border:1px solid pink;border-radius: 5px;float: left;display: block;margin: 10px 5px 10px 0px;overflow: hidden;}
+.problem-right-containe {width: 29%;height:auto;border:1px solid goldenrod;border-radius: 5px;float: right;display: block;overflow: hidden;margin: 10px 0px 10px 5px;}
+.single-problem-containe {width: 100%;height: auto;background: #f7f7f7;border-bottom: 1px solid gainsboro;display: inline-block; }
+.problem-details {width: 94%; margin: 25px 25px 0px 25px;}
+.single-problem-containe a {text-decoration: none;}
+.problem-info {width: 100%;height: auto;line-height: 25px;}
+#problem-name {font-size: 22px;font-weight: bolder; color: #002752;}
+.problem-difficulty {font-size: 13px;opacity: .8;color: green;}
+.problem-info span {font-size: 13px;opacity: .8;}
+
+.problem-extra-info {width: 94%; margin: 3px 10px 10px 25px; overflow: hidden;display: block;}
+.extra-info-left {width: 70%; float: left; }
+.extra-info-right {width: 28%;float: right;}
+.extra-info-left p {font-weight: 200;color: #808080;}
+#solved {height: auto;width: 200px; border: 1px solid forestgreen;text-align: center;font-size: 20px;opacity: .8;font-weight: 400;font-family: SourceCodePro, monaco, Cou; color:white;background-color: #009900;}
+#unsolved {height: auto;width: 200px; border: 1px solid indianred;text-align: center;font-size: 20px;opacity: .8;font-weight: 400;font-family: SourceCodePro, monaco, Cou; color:white;background-color: #ff6666;}
+
+.right-side {width: 100%;height: auto; background: white; margin-bottom: 20px;}
+.top-title {width: 100%; height: 40px; background: #0c5460;}
+.top-title h2 {font-family: Arial, Helvetica, sans-serif;color: wheat;padding: 10px 0px 10px 15px;}
+.right-main-containe {width: 96%;margin: 10px;} /*border: 1px solid pink;border-radius: 5px;*/
+
+form.problem-search input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.problem-search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: dimgrey;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+
+form.problem-search button:hover {
+    background: darkslategrey;
+}
+
+/* Clear floats */
+form.problem-search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#new-problem {background: #533f03;}
+
+.category-search {width: 100%;height: auto;}
+.category-search span {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 16px;color: #0c5460;}
+.category-name {font-size: 16px;color: #4d79ff;}
+
+#difficulty {color: #ff8566;}
+.difficulty-level {font-size: 16px;}
+#subCategory {color:#cc9966;}
+.subcategory-name {font-size: 16px;color:slategray;}
+
+button.search_button { border-color: #1e7e34;font-size: 16px;color: #1e7e34; }
+button.search_button:hover { border-color: greenyellow;color: #fefefe;background: #1e7e34;}
+
+.new-problem-details {width: 94%;margin: 18px 18px 0px 18px;}
+#tags1:hover {color : #ded8f3;}
+#tags2:hover {color : #ded8f3;}
+
+.left-nav li a.active-page{opacity: 1; color: white;}
