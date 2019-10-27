@@ -36,7 +36,7 @@
 .half-table-data a:hover { font-size: 18px;color: #4B0082;}
 .table-headding-hover:hover {font-size: 18px;color: #8b5791;}
 
-.left-row {float: left;width: 49%;height:auto;margin: 10px;border-radius: 5px;text-align: center;display: block;}
+.left-row {float: left;width: 48%;height:auto;margin: 10px;border-radius: 5px;text-align: center;display: block;}
 .right-row {width: 49%;height:auto;margin: 10px;border-radius: 5px;text-align: center;display: block;overflow-x: hidden;padding-top: 10px;}
 
 .left-nav span.active-page{opacity: 1; color: white;}

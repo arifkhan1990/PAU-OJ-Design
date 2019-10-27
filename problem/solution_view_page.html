@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="../css/solution_view_page.css">
     <link rel="stylesheet" href="../css/solution_submission_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/prism.css" rel="stylesheet" />
 
 </head>
-<body>
+<body class="line-numbers">
 <nav class="pauoj-navbar sticky">
     <div class="navId">
         <ul>
@@ -93,8 +94,21 @@
                                 <p><strong>Language : </strong> C++</p>
                                 <a href="#">Back to editor</a>
                             </div>
-                            <div class="code">
-                                <p>#include< bits/stdc++.h ></p>
+                            <pre>
+                                <code class="language-cpp">
+                                <div class="code">
+                                #include < bits/stdc++.h>
+                                using namespace std;
+
+                                int main()
+                                {
+                                   int n, m, sum = 0;
+                                   cin >> n >> m;
+                                   sum = n+m;
+                                   cout << sum << endl;
+                                   return 0;
+                                }
+<!--                                 <p>#include< bits/stdc++.h ></p>
                                     <p>using namespace std;</p>
                                 <br>
                                     <p>int main()</p>
@@ -105,8 +119,11 @@
                                     <p>  cout << sum << endl;</p>
                                 <br>
                                     <p>return 0;</p>
-                                    <p>}</p>
+                                    <p>}</p> -->
                             </div>
+                                </code>
+                            </pre>
+
                         </div>
                         <div class="judgement-part">
                             <h2>Judgement</h2>
@@ -268,5 +285,6 @@
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
 <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
 <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="../js/prism.js"></script>
 </body>
 </html>
