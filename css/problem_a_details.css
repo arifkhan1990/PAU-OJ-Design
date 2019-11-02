@@ -1,0 +1,19 @@
+.contest-problem-header {
+	height: 150px;
+/*	border: 1px solid pink;
+	border-radius: 5px;*/
+	display: block;
+	overflow: hidden;
+}
+
+.problem-titel {
+	margin: 10px;
+	text-align: center;
+	font-weight: 400;
+	color: #000;
+}
+
+.contest-problem-info {
+	line-height: 25px;
+	text-align: center;
+}

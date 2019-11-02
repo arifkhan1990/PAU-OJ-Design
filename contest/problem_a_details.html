@@ -8,7 +8,11 @@
     <title>PAU OJ</title>
     <link rel="stylesheet" href="../css/nav.css">
         <link rel="stylesheet" href="../css/main_page.css">
+    <link rel="stylesheet" href="../css/problems.css">
+    <link rel="stylesheet" href="../css/contest.css">
     <link rel="stylesheet" href="../css/single_page.css">
+    <link rel="stylesheet" href="../css/single_contest_page.css">
+    <link rel="stylesheet" href="../css/problem_a_details.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,10 +21,10 @@
         <ul>
             <div class="left-nav">
                 <a href="../main.html" class="active"><img src="..\images\logo.gif" alt="" id="logo"><span id="title">PAU OJ</span></a>
-                <li><a href="../problem/problems.html" class="active">Problem</a></li>
-                <li><a href="../contest/contest.html">Contest</a></li>
+                <li><a href="../problem/problems.html">Problem</a></li>
+                <li><a href="../contest/contest.html" class='active'>Contest</a></li>
                 <li><a href="../rank.html">Rank</a></li>
-                                <li class="dropdown"><a href="../submission.html">Submission <i class="fa fa-caret-down"></i></a>
+                            <li class="dropdown"><a href="../submission.html">Submission <i class="fa fa-caret-down"></i></a>
                 <div class="dropdown-content">
                     <a href="" value="all" style="font-size: 16px;color: #154360;">All Submission</a>
                     <a href="" value="my_submission" style="font-size: 16px;color: #154360;">My Submission</a>
@@ -40,64 +44,43 @@
     </div>
 </nav>
 
-<!--<div class="problem-page-header-part">-->
-    <!--<div class="problem-row-header-part">-->
-        <!--<div class="problem-header-part">-->
-            <!--<a href="#"><span id="tags1">Problems</span> > <span id="tags2">Array Rotation</span></a>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
+<div class="problem-page-header-part">
+  <div class="problem-row-header-part">
+      <div class="header-part">
+          <a href="../contest/contest.html">
+            Contests
+            <h1>Red Coder Contest</h1>
+            </a>
+      </div>
+  </div>
+</div>
 
-<div class="problem-info">
-    <div class="problem-content">
-        <div class="left-content">
-            <div class="problem-details">
-                <h1 class="problem-title">Array Rotation</h1>
-                <span class="author">Author : GeeksforGeek</span><br \>
-                <span class="score">Score : 15</span><br \>
-                <span class="difficulty">Difficulty : <span style="color: forestgreen;opacity: 2;">Easy</span></span>
-            </div>
-        </div>
-        <div class="right-content">
-            <div class="extra-details">
-                <div class="resourses"><a href="#">Array Rotation</a></div>
-                <div class="rated">
-
-                    <fieldset class="rating">
-                        <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                    </fieldset>
-                    <br>
-                </div><br>
-                <div class="download">
-                    <a href="../pdf_file/Arif_Khan_CV.pdf" download><i class="fa fa-file-pdf">PDF</i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="problem-row-header-part">
+    <hr>
 </div>
 
 <div class="details-content">
     <div class="details-page">
         <div class="problem-navber">
-            <li class="navbar-content"><a href="../problem/problem_description.html" class='active-page'>Description</a></li>
-            <li class="navbar-content"><a href="../problem/problem_rankboard.html">RankBoard</a></li>
-            <li class="navbar-content"><a href="../problem/solution_submission_page.html">Submission</a></li>
-            <li class="navbar-content"><a href="../problem/problem_discuss.html">Forum</a></li>
-            <li class="navbar-content"><a href="../problem/problem_editorial.html">Editorial <i class="fa fa-lock"></i></a></li>
-            <li class="navbar-content"><a href="../problem/problem_related_resourcs.html">Resources</a></li>
+            <li class="navbar-content"><a href="../contest/single_contest_page.html" class='active-page'>Problem</a></li>
+            <li class="navbar-content"><a href="../contest/contest_rank.html">RankBoard</a></li>
+            <li class="navbar-content"><a href="../contest/contest_submission.html">Submission</a></li>
+            <li class="navbar-content"><a href="../contest/clearification.html">Clearification</a></li>
         </div>
 
         <div class="problem-description">
             <div class="problem-body-content">
+                <div class="contest-problem-header">
+                    <div class="problem-titel">
+                        <h1>Array Roted</h1>
+                    </div>
+                    <div class="contest-problem-info">
+                    <p>Author : GeeksforGeek</p>
+                        <span>Time : </span> <span>1s, </span>
+                        <span>Memory: </span> <span>1000KB</span>
+                    </div>
+                </div>
+
                 <div class="description-part">
                     <p>John Watson knows of an operation called a right circular rotation on an array of integers.
                         One rotation operation moves the last array element to the first position and shifts all remaining elements right one.
@@ -110,12 +93,12 @@
 
                         <p>First we perform the two rotations:</p>
 
-                        <strong>[3,4,5] -> [5,3,4] -> [4,5,3]</strong>
+                        <strong>[3,4,5] -&gt; [5,3,4] -&gt; [4,5,3]</strong>
 
                         <p>Now return the values from the zero-based indices 1 and 2 as indicated in the m array.</p>
                     <strong>a[1] = 5</strong>
                     <strong>a[2] = 3</strong>
-                    <br />
+                    <br>
                     <h4>Function Description</h4>
                     <p>Complete the circularArrayRotation function in the editor below. It should return an array of integers representing the values at the specified indices.</p>
 
@@ -127,15 +110,15 @@
                      </ul>
                     <h4>Input Format</h4>
                     <p>The first line contains 3 space-separated integers, n , k, and q, the number of elements in the integer array, the rotation count and the number of queries.</p>
-                    <p>The second line contains n space-separated integers, where each integer i describes array element a[i] (where 0 ≤ i < n ).
+                    <p>The second line contains n space-separated integers, where each integer i describes array element a[i] (where 0 ≤ i &lt; n ).
                         Each of the q subsequent lines contains a single integer denoting m, the index of the element to return from a.</p>
                     <h4>Constraints</h4>
                     <ul class="text-sty">
-                        <li>1 ≤ n < 10^5 </li>
-                        <li>1 ≤ a[i] < 10^5</li>
-                        <li>1 ≤ k < 10^5</li>
-                        <li>1 ≤ q < 500</li>
-                        <li>0 ≤ m < n</li>
+                        <li>1 ≤ n &lt; 10^5 </li>
+                        <li>1 ≤ a[i] &lt; 10^5</li>
+                        <li>1 ≤ k &lt; 10^5</li>
+                        <li>1 ≤ q &lt; 500</li>
+                        <li>0 ≤ m &lt; n</li>
                     </ul>
                     <h4>Output Format</h4>
 
@@ -187,14 +170,15 @@
                         </table>
                     </div>
                 </div>
-                <div class="code-file-upload">
+
+                    <div class="code-file-upload">
                         <div class="file-upload-title">
-                            <h1>Upload your code file</h1>
+                            <h1>Upload Your Solution File</h1>
                         </div>
                         <form action="">
                         <div class="choos-language">
                           <select>
-                            <option value="">Choose Your code Language</option>
+                            <option value="">Choose Your Solution Language</option>
                             <option value="books">C</option>
                             <option value="html">C++</option>
                             <option value="css">Java</option>
@@ -204,32 +188,29 @@
                         </div>
                         <div class="code-upload">
                             <input id="code-file-id1" type="file" name="fileToUpload" id="fileToUpload">
-                            <input id="code-file-id2" type="submit" value="Upload Code" name="submit">
+                            <input id="code-file-id2" type="submit" value="Upload Solution" name="submit">
                         </div>
                         </form>
                     </div>
-            </div>
-        </div>
-
-        <div class="problem-description">
-            <div class="problem-body-content">
-
-                <div class="editor-left-part">
-                    <div class="editor-bar">
-                        <div class="left-bar"></div>
-                        <div class="right-bar">
-                            <div class="editbar-manu">
-                                <div class="select-control">
-                                    <div class="select-value">
-                                        <span class="Select-arrow-zone"><span class="Select-arrow"></span></span>
+                    <div class="problem-body-content">
+                        <div class="editor-left-part">
+                            <div class="editor-bar">
+                                <div class="left-bar"></div>
+                                <div class="right-bar">
+                                    <div class="editbar-manu">
+                                        <div class="select-control">
+                                            <div class="select-value">
+                                                <span class="Select-arrow-zone"><span class="Select-arrow"></span></span>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <span style="padding-right:10px; "><i class="fa fa-cog" style="font-size: 25px;"></i></span>
                                 </div>
                             </div>
-                            <span style="padding-right:10px; "><i class="fa fa-cog" style="font-size: 25px;"></i></span>
                         </div>
+                        <div class="editor-right-part"></div>
                     </div>
-                </div>
-                <div class="editor-right-part"></div>
+
             </div>
         </div>
     </div>

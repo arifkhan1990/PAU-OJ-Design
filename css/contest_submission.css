@@ -1,0 +1,24 @@
+.contest-submission-left-part {
+/*     width: 100%; */
+    height: auto;
+    margin: 10px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+
+.contest-submission-page {
+    /* width: 98%; */
+    height: auto;
+    /* margin: 15px; */
+    display: block;
+    overflow: hidden;
+}
+td#problem_short_name a{
+    font-size: 14px;
+    color: #17A589 ;
+    font-weight: bold;
+    text-decoration: none;
+} 

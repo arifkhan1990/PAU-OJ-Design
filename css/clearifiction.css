@@ -1,0 +1,164 @@
+.clearification {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 5px #808B96;
+}
+
+.single-clearification {
+    margin: 10px;
+    height: auto; 
+    display: block;
+    overflow: hidden;
+}
+
+.question {
+	border-top: 1px solid pink;
+	box-shadow: 0 0 5px #808B96;
+}
+.question-left {
+    width: 80%;
+    margin: 5px auto;
+    padding-top: 10px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+.anwser {
+    width: 100%;
+    margin: 5px auto;
+    font-size: 14px;
+    padding-bottom: 15px;
+    float: left;
+    display: block;
+    overflow: hidden;
+}
+.basic_info_question_user {
+   width: 25%;
+   float: left;
+}
+.basic_info_anwser {
+   width: 20%;
+   float: left;
+}
+.question_details {
+   width: 75%;
+   float: right;
+}
+.anwser_details {
+   width: 80%;
+   float: right;
+}
+.question-left span, .basic_info_question_user span, .question_details span,.anwser span, .basic_info_anwser span, .anwser_details span  {
+	text-align: center;
+	padding-left: 10px;
+}
+
+.question-left .basic_info_question_user span#q_by_user,.anwser .basic_info_anwser span#q_by_user {
+	font-size: 16px;
+}
+
+.question-left .basic_info_question_user span#problem_id, .anwser .basic_info_anwser span#problem_id {
+	font-size: 14px;
+}
+
+.question-left .basic_info_question_user span#q_by_user a, .anwser .basic_info_anwser span#q_by_user a {
+	text-decoration: none;
+	    color: #214dca;
+}
+.question-left .basic_info_question_user span#problem_id a, .anwser .basic_info_anwser span#problem_id a  {
+	text-decoration: none;
+	    color: #5B2C6F;
+}
+.question-left .question_details span#question_tag, .anwser .anwser_details span#question_tag {
+	font-size: 18px;
+    color: #000 blod;
+}
+.question-left .question_details span#question_description, .anwser .anwser_details span#question_description {
+	text-align: justify;
+}
+.question-right {
+	width: 15%;
+    margin: 5px auto;
+    font-size: 14px;
+    padding-bottom: 5px;
+    float: right;
+}
+
+.question-right #ans-button {
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	box-shadow: 0 0 5px #21618C;
+	background: #2471A3;
+	color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+#q-input {
+	padding-left: 4px;
+}
+/* Clear floats after the columns */
+.row_q:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.contest-problem-list {
+	width: 60%;
+	height: 60px;
+	display: block;
+	overflow: hidden;
+	border: 1px solid pink;
+	border-radius: 5px;
+	padding-bottom: 5px;
+}
+
+.problem-a {
+	margin: 10px auto;
+}
+.problem-a-left {
+	font-size: 18px;
+	font-weight: 400;
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 20px; 
+}
+
+.problem-a-left a{
+  text-decoration: none;
+}
+.problem-a-right {
+	font-size: 18px;
+	font-weight: 400;
+	float: right;
+	text-align: center;
+	padding-top: 10px;
+	padding-right: 30px;
+}
