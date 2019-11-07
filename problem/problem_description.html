@@ -9,6 +9,52 @@
     <link rel="stylesheet" href="../css/nav.css">
         <link rel="stylesheet" href="../css/main_page.css">
     <link rel="stylesheet" href="../css/single_page.css">
+   
+<!-- <link rel="stylesheet" href="../codemirror/plugin/codemirror/doc/docs.css"> -->
+<!-- theme for codemirror -->
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/lib/codemirror.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/bespin.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/base16-light.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/blackboard.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/cobalt.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/dracula.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/duotone-dark.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/duotone-light.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/eclipse.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/elegant.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/isotope.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/lesser-dark.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/liquibyte.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/material.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/material-darker.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/material-ocean.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/night.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/panda-syntax.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/tomorrow-night-bright.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/twilight.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/idea.css">
+<link rel="stylesheet" href="../codemirror/plugin/codemirror/theme/darcula.css">
+
+
+<!-- search for codemirror -->
+ <link rel="stylesheet" href="../codeMirror/plugin/codemirror/addon/dialog/dialog.css">
+ <script src="../codemirror/plugin/codemirror/addon/search/search.js"></script>
+ <script src="../codemirror/plugin/codemirror/addon/search/searchcursor.js"></script>
+ <script src="../codemirror/plugin/codemirror/addon/search/jump-to-line.js"></script>
+ <script src="../codemirror/plugin/codemirror/addon/dialog/dialog.js"></script>
+
+
+<script src="../codemirror/plugin/codemirror/lib/codemirror.js"></script>
+<script src="../codemirror/plugin/codemirror/mode/javascript/javascript.js"></script>
+<script src="../codemirror/plugin/codemirror/addon/selection/active-line.js"></script>
+<script src="../codemirror/plugin/codemirror/addon/edit/matchbrackets.js"></script>
+<style>
+      .CodeMirror {border: 1px solid black; font-size:13px}
+    </style>
+
+
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -191,7 +237,7 @@
                         <div class="file-upload-title">
                             <h1>Upload your code file</h1>
                         </div>
-                        <form action="">
+                        <form action="" class="">
                         <div class="choos-language">
                           <select>
                             <option value="">Choose Your code Language</option>
@@ -216,20 +262,133 @@
 
                 <div class="editor-left-part">
                     <div class="editor-bar">
-                        <div class="left-bar"></div>
+                        <div class="left-bar" id="theme">
+                        <!-- <form action=""> -->
+                          <label class="theme-select-class">Theme </label> 
+                            <select onchange="selectTheme()" id="select">
+                                <option selected="">default</option>
+                                <option>bespin</option>
+                                <option>blackboard</option>
+                                <option>cobalt</option>
+                                <option>colorforth</option>
+                                <option>darcula</option>
+                                <option>dracula</option>
+                                <option>eclipse</option>
+                                <option>elegant</option>
+                                <option>icecoder</option>
+                                <option>idea</option>
+                                <option>isotope</option>
+                                <option>lesser-dark</option>
+                                <option>liquibyte</option>
+                                <option>material</option>
+                                <option>material-darker</option>
+                                <option>material-ocean</option>
+                                <option>midnight</option>
+                                <option>night</option>
+                                <option>panda-syntax</option>
+                                <option>pastel-on-dark</option>
+                                <option>railscasts</option>
+                                <option>rubyblue</option>
+                                <option>seti</option>
+                                <option>shadowfox</option>
+                                <option>solarized dark</option>
+                                <option>solarized light</option>
+                                <option>the-matrix</option>
+                                <option>tomorrow-night-bright</option>
+                                <option>tomorrow-night-eighties</option>
+                                <option>twilight</option>
+                                <option>vibrant-ink</option>
+                                <option>xq-dark</option>
+                                <option>xq-light</option>
+                                </select>                        <!-- </form> -->
+
+                        </div>
                         <div class="right-bar">
                             <div class="editbar-manu">
+                            <div class="class="Select  select-language has-value is-searchable Select--single">
                                 <div class="select-control">
                                     <div class="select-value">
                                         <span class="Select-arrow-zone"><span class="Select-arrow"></span></span>
                                     </div>
+                                    <div class="language_code">
+                                    <select class="form-control select2-hidden-accessible" style="width:300px;" tabindex="-1" aria-hidden="true">
+                                
+                                    <option value="3003" data-mime="text/x-c++src">C++14 (GCC 5.4.1)</option>
+                                    <option value="3002" data-mime="text/x-csrc">C (GCC 5.4.1)</option>
+                                    <option value="3006" data-mime="text/x-csharp">C# (Mono 4.6.2.0)</option>
+                                    <option value="3013" data-mime="text/x-go">Go (1.6)</option>
+                                    <option value="3014" data-mime="text/x-haskell">Haskell (GHC 7.10.3)</option>
+                                    <option value="3015" data-mime="text/x-java">Java7 (OpenJDK 1.7.0)</option>
+                                    <option value="3016" data-mime="text/x-java">Java8 (OpenJDK 1.8.0)</option>
+                                    <option value="3017" data-mime="text/javascript">JavaScript (node.js v5.12)</option>
+                                    <option value="3021" data-mime="text/x-php">PHP (5.6.30)</option>
+                                    <option value="3022" data-mime="text/x-python">Python2 (2.7.6)</option>
+                                    <option value="3023" data-mime="text/x-python">Python3 (3.4.3)</option>
+                                    <option value="3025" data-mime="text/x-scala">Scala (2.11.7)</option>
+                                    <option value="3029" data-mime="text/x-c++src">C++ (GCC 5.4.1)</option>
+                                    <option value="3503" data-mime="text/x-swift">Swift (swift-2.2-RELEASE)</option>
+                                    <option value="3523" data-mime="text/x-kotlin">Kotlin (1.0.0)</option>
+                                    <option value="3524" data-mime="text/x-php">PHP7 (7.0.15)</option>
+                            </select>
+<!--                                         <select name="" id="">
+                                            <option value="c">C</option>
+                                            <option value="cpp">C++</option>
+                                            <option value="java">Java</option>
+                                            <option value="python">Python</option>
+                                            <option value="php">Php</option>
+                                        </select> -->
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                             <span style="padding-right:10px; "><i class="fa fa-cog" style="font-size: 25px;"></i></span>
                         </div>
                     </div>
+                    <div class="code-box">
+                        <form action="" id="preview-formn" method="" class="form-class">
+                            <textarea name="code" id="code" class="codemirror-textarea">
+# Python3 program to find maximum 
+# in arr[] of size n  
+  
+# python function to find maximum 
+# in arr[] of size n 
+def largest(arr,n): 
+  
+    # Initialize maximum element 
+    max = arr[0] 
+  
+    # Traverse array elements from second 
+    # and compare every element with  
+    # current max 
+    for i in range(1, n): 
+        if arr[i] > max: 
+            max = arr[i] 
+    return max
+  
+# Driver Code 
+arr = [10, 324, 45, 90, 9808] 
+n = len(arr) 
+Ans = largest(arr,n) 
+print ("Largest in given array is",Ans) 
+  
+# This code is contributed by Smitha Dinesh Semwal 
+                            </textarea>
+                            <br>
+
+                            <!-- <div class="row_and_col"></div> -->
+                            <div class="input-btn">
+                                    <input type="submit" name="preview-form-submit" id="preview-form-submit" value="Submit Code" style="width: 150px; float: right; background: #17A583; color: #ffffff; box-shadow: 0 0 5px gray;font-weight: bold;">
+                                    <input type="submit" name="preview-form-submit" id="preview-form-submit" value="Run Code" style="width: 150px; float: right;background: #7CA517; color: #ffffff; box-shadow: 0 0 5px gray;font-weight: bold;"">
+                            </div>
+                            <div class="custom-input">
+                                <span style="padding-left: 20px;font-size: 16px;color: #B29504;font-weight: bold;">Custom Input</span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="editor-right-part"></div>
+                <div class="editor-right-part">
+                    <div id="preview-comment"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -287,5 +446,83 @@
     <p> this site develop by Arif khan &copy; 2018. All rights reserved.</p>
 </div>
 
+<script type="text/JavaScript" src="../codemirror/js/jquery_codemirror.min.js"></script>
+<script type="text/JavaScript" src="../codemirror/plugin/codemirror/lib/codemirror.js" ></script>
+<script type="text/JavaScript" src="../codemirror/plugin/codemirror/mode/python/python.js" ></script>
+<script type="text/JavaScript" src="../codemirror/plugin/codemirror/mode/clike/clike.js" ></script>
+<script type="text/JavaScript" src="../codemirror/plugin/codemirror/mode/cmake/cmake.js" ></script>
+<script type="text/JavaScript" src="../codemirror/js/default.js" ></script>
+
+
+<!-- <script>
+ $("#themeName").on("click",function(){
+    if(theme_name != "") theme_name = "";
+    var theme_name =  $("#themeName").val();
+    if(theme_name != "") my_theme_change(theme_name);
+  });
+</script> -->
+<script>
+  var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+    lineNumbers: true,
+    styleActiveLine: true,
+    matchBrackets: true
+  });
+  var input = document.getElementById("select");
+  function selectTheme() {
+    var theme = input.options[input.selectedIndex].textContent;
+    editor.setOption("theme", theme);
+    location.hash = "#" + theme;
+  }
+  var choice = (location.hash && location.hash.slice(1)) ||
+               (document.location.search &&
+                decodeURIComponent(document.location.search.slice(1)));
+  if (choice) {
+    input.value = choice;
+    editor.setOption("theme", choice);
+  }
+  CodeMirror.on(window, "hashchange", function() {
+    var theme = location.hash.slice(1);
+    if (theme) { input.value = theme; selectTheme(); }
+  });
+</script>
+<script>
+      var cEditor = CodeMirror.fromTextArea(document.getElementById("c-code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "text/x-csrc"
+      });
+      var cppEditor = CodeMirror.fromTextArea(document.getElementById("cpp-code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "text/x-c++src"
+      });
+      var javaEditor = CodeMirror.fromTextArea(document.getElementById("java-code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "text/x-java"
+      });
+      var objectivecEditor = CodeMirror.fromTextArea(document.getElementById("objectivec-code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "text/x-objectivec"
+      });
+      var scalaEditor = CodeMirror.fromTextArea(document.getElementById("scala-code"), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: "text/x-scala"
+      });
+      var kotlinEditor = CodeMirror.fromTextArea(document.getElementById("kotlin-code"), {
+          lineNumbers: true,
+          matchBrackets: true,
+          mode: "text/x-kotlin"
+      });
+      var ceylonEditor = CodeMirror.fromTextArea(document.getElementById("ceylon-code"), {
+          lineNumbers: true,
+          matchBrackets: true,
+          mode: "text/x-ceylon"
+      });
+      var mac = CodeMirror.keyMap.default == CodeMirror.keyMap.macDefault;
+      CodeMirror.keyMap.default[(mac ? "Cmd" : "Ctrl") + "-Space"] = "autocomplete";
+    </script>
 </body>
 </html>

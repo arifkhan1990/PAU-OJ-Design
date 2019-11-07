@@ -76,7 +76,7 @@
 .editorialByName {margin: 10px 0px 5px 5px;flex: 1;float: left;}
 .editorialByName a{text-decoration: none;}
 .problem-explaine {margin: 20px 5px 20px 15px;}
-.problem-explaine p, li {font-size: 14px; font-weight: 400;color:#576871;line-height: 2; text-align: justify;}
+.problem-explaine p, .problem-explaine li {font-size: 14px; font-weight: 400;color:#576871;line-height: 2; text-align: justify;}
 .problem-explaine ol {margin-left: 20px;}
 .editorial-info {display: flex;margin-top: 10px;}
 .editorial-heading {flex: 1;font-weight: 400;font-size: 13px;color:#727292;}

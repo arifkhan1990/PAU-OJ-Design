@@ -72,7 +72,7 @@ h1 { font-size: 2.3em; margin: 10px auto; }
 .problem-navber li a.active-page{opacity: 1; color: #cc5200;}
 
 .problem-description {width: 98%;height: auto;margin: 15px;display: block;overflow: hidden;}
-.problem-body-content {margin: 5px;display: block;overflow: hidden; padding-top: 10px;}
+.problem-body-content {margin: 5px;display: block;overflow: hidden; padding-top: 10px;line-height: 1.5;}
 .description-part {font-size: 16px;font-weight: 200;color: #404040;line-height: 2;text-align: justify;letter-spacing: 1.5px;overflow: hidden;}
 .text-sty {padding-left: 25px;}
 .problem {}
@@ -113,14 +113,14 @@ h1 { font-size: 2.3em; margin: 10px auto; }
 #tags1:hover {color : #9f88ee;}
 #tags2:hover {color : #9f88ee;}
 
-.editor-left-part {width: 55%; height: 200px; float: left;display: block;border: 1px solid saddlebrown;border-radius: 5px;}
+.editor-left-part {width: 60%; height: auto; float: left;display: block;border-top: 1px solid #ccc;border-radius: 5px;box-shadow: 0 0 5px darkgrey;padding-right: 5px;}
 .editor-bar {border-bottom: 1px solid #e7eeef;
-    padding: 10px 0;align-items: center;
+    padding: 5px 0;align-items: center;
     display: flex;
     justify-content: space-between;}
 .left-bar, .right-bar {align-items: center;display: flex;}
 .editbar-manu {margin-right: 10px;min-width: 200px;}
-.select-control {
+.select-control,select {
     background-color: #fff;
     border: 1px solid #ccc;
     border-collapse: separate;
@@ -134,11 +134,12 @@ h1 { font-size: 2.3em; margin: 10px auto; }
     overflow: hidden;
     position: relative;
     width: 100%;
+    padding: 8px;
 }
 .select-value {
     bottom: 0;
     color: #aaa;
-    left: 0;
+    /*left: 0;*/
     line-height: 34px;
     max-width: 100%;
     overflow: hidden;
@@ -158,7 +159,7 @@ h1 { font-size: 2.3em; margin: 10px auto; }
     vertical-align: middle;
     display: inline-block;
 }
-.editor-right-part {width: 45%; height: 200px; float: right;display: block;border: 1px solid saddlebrown;border-radius: 5px;}
+.editor-right-part {width: 40%; height: 200px; float: right;display: block;border: 1px solid saddlebrown;border-radius: 5px;}
 
 .code-file-upload {
     height: 150px;
@@ -207,4 +208,97 @@ h1 { font-size: 2.3em; margin: 10px auto; }
    background: green;
 }
 
+.Select span {
+    box-sizing: border-box;
+}
 
+.Select-arrow {
+    border-color: #999 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 2.5px;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    position: relative;
+}
+
+.Select-arrow-zone {
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 25px;
+    padding-right: 5px;
+}
+
+.hr-monaco-editor .editor-toolbar .select-language {
+    margin-right: 10px;
+}
+.hr-monaco-editor .Select {
+    min-width: 200px;
+}
+
+
+.Select, .Select div, .Select input, .Select span {
+    box-sizing: border-box;
+}
+
+.Select {
+    position: relative;
+}
+
+.hr-monaco-editor-wrapper .hr-monaco-editor .Select-control {
+    background-color: #f3f7f7;
+    color: #0e141e;
+}
+
+.Select, .Select div, .Select input, .Select span {
+    box-sizing: border-box;
+}
+
+.Select-control {
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    cursor: default;
+    display: table;
+    border-collapse: separate;
+    height: 36px;
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    border-spacing: 0px;
+    outline: none;
+    overflow: hidden;
+}
+.row_and_col {
+    height: 40px;
+}
+.code-box {
+    margin: 0px auto;
+}
+
+.form-class {
+    display: block;
+}
+.input-btn {
+  width: 60%;
+  float: right;
+}
+
+.custom-input {
+    width: 40%;
+    float: left;
+}
+.theme-select-class{
+    font-size: 16px;
+    color: #39d29e;
+    padding-left: 10px;
+}
+#themeName {
+    margin-left: 10px;
+}
