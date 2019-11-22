@@ -249,7 +249,7 @@
                           </select>
                         </div>
                         <div class="code-upload">
-                            <input id="code-file-id1" type="file" name="fileToUpload" id="fileToUpload">
+                            <input id="code-file-id1" type="file" name="fileToUpload" id="fileToUpload" style="padding: 7px 20px!important;">
                             <input id="code-file-id2" type="submit" value="Upload Code" name="submit">
                         </div>
                         </form>
@@ -306,10 +306,7 @@
                         <div class="right-bar">
                             <div class="editbar-manu">
                             <div class="class="Select  select-language has-value is-searchable Select--single">
-                                <div class="select-control">
-                                    <div class="select-value">
-                                        <span class="Select-arrow-zone"><span class="Select-arrow"></span></span>
-                                    </div>
+                                <div class="">
                                     <div class="language_code">
                                     <select class="form-control select2-hidden-accessible" style="width:300px;" tabindex="-1" aria-hidden="true">
                                 
@@ -377,17 +374,135 @@ print ("Largest in given array is",Ans)
 
                             <!-- <div class="row_and_col"></div> -->
                             <div class="input-btn">
-                                    <input type="submit" name="preview-form-submit" id="preview-form-submit" value="Submit Code" style="width: 150px; float: right; background: #17A583; color: #ffffff; box-shadow: 0 0 5px gray;font-weight: bold;">
-                                    <input type="submit" name="preview-form-submit" id="preview-form-submit" value="Run Code" style="width: 150px; float: right;background: #7CA517; color: #ffffff; box-shadow: 0 0 5px gray;font-weight: bold;"">
+                                    <input type="submit" name="preview-form-submit" id="preview-form-submit" value="Submit Code" style="width: 150px; float: right; background: #17A583; color: #ffffff; box-shadow: 0 0 5px gray;font-weight: bold;height: 40px;">
+                                    <input type="submit" name="preview-form-submit" id="preview-form-submit" value="Run Code" style="width: 150px; float: right;background: #7CA517; color: #ffffff; box-shadow: 0 0 5px gray;font-weight: bold;height: 40px;">
                             </div>
-                            <div class="custom-input">
+                            <label>
+                                <div class="custom-input inline" onclick="myCustomInput()">
+                                    <span style="padding-left: 20px;font-size: 16px;color: #B29504;font-weight: bold;">Custom Input</span>
+                                    <input type="checkbox" class="custom-input-checkbox" style="width: 10%!important;">
+                                </div>
+                                <div id="customInputDiv">
+                                    <form action="">
+                                        <textarea name="" id="" cols="25" rows="6"></textarea>
+                                    </form>
+                                </div>
+                            </label>
+                            <!-- <div class="custom-input">
                                 <span style="padding-left: 20px;font-size: 16px;color: #B29504;font-weight: bold;">Custom Input</span>
-                            </div>
+                            </div> -->
                         </form>
                     </div>
                 </div>
                 <div class="editor-right-part">
-                    <div id="preview-comment"></div>
+                    <div id="preview-comment">
+                        <div class="test-case-title" onclick="myInputOutputShow()">
+                            <h2>Test Case 0</h2>
+                        </div>
+                        <div class="input-output-details hide" id="inOutDiv">
+                                <div class="input-detials">
+                                        <div class="test-case-title" onclick="myInputShow0()">
+                                            <h2>Input</h2>
+                                        </div>
+                                        <div class="input-detials" id="inputDiv0">
+                                                <p>3 2 3</p>
+                                                <p>1 2 3</p>
+                                                <p>0</p>
+                                                <p>1</p>
+                                                <p>2</p>
+                                        </div>   
+    
+                                    </div>
+                                    <div class="output-detials">
+                                        <div class="test-case-title" onclick="myOutputShow0()">
+                                            <h2>Your Output</h2>
+                                        </div>
+                                        <div class="output-detials" id="outputDiv0">
+                                                <p>2<br>3<br>1<br></p>
+                                        </div> 
+                                    </div>
+                                    <div class="expected-output-detials">
+                                        <div class="test-case-title" onclick="myExOutputShow0()"> 
+                                            <h2>Expected Output</h2>
+                                        </div>
+                                        <div class="ex-output-detials" id="exOutputDiv0">
+                                                <p>2<br>3<br>1<br></p>
+                                        </div> 
+                                    </div>
+                        </div>
+                    </div>
+                    <div id="preview-comment">
+                            <div class="test-case-title" onclick="myInputOutputShow2()">
+                                <h2>Test Case 1</h2>
+                            </div>
+                            <div class="input-output-details hide" id="inOutDiv2">
+                                <div class="input-detials">
+                                    <div class="test-case-title" onclick="myInputShow1()">
+                                        <h2>Input</h2>
+                                    </div>
+                                    <div class="input-detials" id="inputDiv1">
+                                            <p>3 2 3</p>
+                                            <p>1 2 3</p>
+                                            <p>0</p>
+                                            <p>1</p>
+                                            <p>2</p>
+                                    </div>   
+
+                                </div>
+                                <div class="output-detials">
+                                    <div class="test-case-title" onclick="myOutputShow1()">
+                                        <h2>Your Output</h2>
+                                    </div>
+                                    <div class="output-detials" id="outputDiv1">
+                                            <p>2<br>3<br>1<br></p>
+                                    </div> 
+                                </div>
+                                <div class="expected-output-detials">
+                                    <div class="test-case-title" onclick="myExOutputShow1()"> 
+                                        <h2>Expected Output</h2>
+                                    </div>
+                                    <div class="ex-output-detials" id="exOutputDiv1">
+                                            <p>2<br>3<br>1<br></p>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div id="preview-comment">
+                                <div class="test-case-title" onclick="myInputOutputShow3()">
+                                    <h2>Test Case 2</h2>
+                                </div>
+                                <div class="input-output-details hide" id="inOutDiv3">
+                                    <div class="input-detials">
+                                            <div class="test-case-title" onclick="myInputShow3()">
+                                                <h2>Input</h2>
+                                            </div>
+                                            <div class="input-detials" id="inputDiv3">
+                                                    <p>3 2 3</p>
+                                                    <p>1 2 3</p>
+                                                    <p>0</p>
+                                                    <p>1</p>
+                                                    <p>2</p>
+                                            </div>   
+        
+                                        </div>
+                                        <div class="output-detials">
+                                            <div class="test-case-title" onclick="myOutputShow3()">
+                                                <h2>Your Output</h2>
+                                            </div>
+                                            <div class="output-detials" id="outputDiv3">
+                                                    <p>2<br>3<br>1<br></p>
+                                            </div> 
+                                        </div>
+                                        <div class="expected-output-detials">
+                                            <div class="test-case-title" onclick="myExOutputShow3()"> 
+                                                <h2>Expected Output</h2>
+                                            </div>
+                                            <div class="ex-output-detials" id="exOutputDiv3">
+                                                    <p>2<br>3<br>1<br></p>
+                                            </div> 
+                                        </div>
+                                </div>
+                            </div>
                 </div>
             </div>
         </div>
@@ -523,6 +638,122 @@ print ("Largest in given array is",Ans)
       });
       var mac = CodeMirror.keyMap.default == CodeMirror.keyMap.macDefault;
       CodeMirror.keyMap.default[(mac ? "Cmd" : "Ctrl") + "-Space"] = "autocomplete";
+    </script>
+    <script>
+        function myInputOutputShow(){
+            var x = document.getElementById("inOutDiv");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myInputOutputShow2(){
+            var x = document.getElementById("inOutDiv2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myInputOutputShow3(){
+            var x = document.getElementById("inOutDiv3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myInputShow0(){
+            var x = document.getElementById("inputDiv0");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myOutputShow0(){
+            var x = document.getElementById("outputDiv0");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myExOutputShow0(){
+            var x = document.getElementById("exOutputDiv0");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myInputShow1(){
+            var x = document.getElementById("inputDiv1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myOutputShow1(){
+            var x = document.getElementById("outputDiv1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myExOutputShow1(){
+            var x = document.getElementById("exOutputDiv1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myInputShow3(){
+            var x = document.getElementById("inputDiv3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myOutputShow3(){
+            var x = document.getElementById("outputDiv3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myExOutputShow3(){
+            var x = document.getElementById("exOutputDiv3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myCustomInput(){
+            var x = document.getElementById("customInputDiv");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
 </body>
 </html>

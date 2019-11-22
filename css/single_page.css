@@ -72,7 +72,7 @@ h1 { font-size: 2.3em; margin: 10px auto; }
 .problem-navber li a.active-page{opacity: 1; color: #cc5200;}
 
 .problem-description {width: 98%;height: auto;margin: 15px;display: block;overflow: hidden;}
-.problem-body-content {margin: 5px;display: block;overflow: hidden; padding-top: 10px;line-height: 1.5;}
+.problem-body-content {margin: 0px;display: block;overflow: hidden; padding-top: 10px;line-height: 1.5;}
 .description-part {font-size: 16px;font-weight: 200;color: #404040;line-height: 2;text-align: justify;letter-spacing: 1.5px;overflow: hidden;}
 .text-sty {padding-left: 25px;}
 .problem {}
@@ -113,7 +113,7 @@ h1 { font-size: 2.3em; margin: 10px auto; }
 #tags1:hover {color : #9f88ee;}
 #tags2:hover {color : #9f88ee;}
 
-.editor-left-part {width: 60%; height: auto; float: left;display: block;border-top: 1px solid #ccc;border-radius: 5px;box-shadow: 0 0 5px darkgrey;padding-right: 5px;}
+.editor-left-part {width: 60%; height: auto; float: left;display: block;border-top: 1px solid #ccc;border-radius: 5px;margin-bottom: 5px;box-shadow: 0 0 5px darkgrey;padding-right: 5px;}
 .editor-bar {border-bottom: 1px solid #e7eeef;
     padding: 5px 0;align-items: center;
     display: flex;
@@ -159,8 +159,17 @@ h1 { font-size: 2.3em; margin: 10px auto; }
     vertical-align: middle;
     display: inline-block;
 }
-.editor-right-part {width: 40%; height: 200px; float: right;display: block;border: 1px solid saddlebrown;border-radius: 5px;}
-
+.editor-right-part {width: 39%; height: auto; float: right;display: block;border-top: 1px solid #ccc;border-radius: 5px;margin-bottom: 5px;box-shadow: 0 0 5px darkgrey;margin-right: 5px;}
+.test-case-title {
+    margin: 5px;
+    /* border: 1px solid #0e141e; */
+    box-shadow: 0 0 4px #40b4d1 ;
+    width: auto;
+    height: 30px;
+    text-align: center;
+    color: #1dcc5b;
+    cursor: pointer;
+}
 .code-file-upload {
     height: 150px;
 /*    border: 1px solid pink;
@@ -196,11 +205,12 @@ h1 { font-size: 2.3em; margin: 10px auto; }
 #code-file-id1 {
     width: 350px;
     background: #ffffff;
+    height: 40px;
 }
 #code-file-id2 {
     width: 200px;
-    background: #1dcc5b;
-    height: 50px;
+    background: #6c4cbb;
+    height: 40px;
     color: #ffffff;
     box-shadow: 0 0 5px green;
 }
@@ -293,6 +303,7 @@ h1 { font-size: 2.3em; margin: 10px auto; }
 .custom-input {
     width: 40%;
     float: left;
+    margin-bottom: 5px;
 }
 .theme-select-class{
     font-size: 16px;
@@ -302,3 +313,121 @@ h1 { font-size: 2.3em; margin: 10px auto; }
 #themeName {
     margin-left: 10px;
 }
+
+#inOutDiv {
+    width: auto;
+    margin: 5px;
+    text-align: center;
+  }
+  #inOutDiv2 {
+    width: auto;
+    margin: 5px;
+    text-align: center;
+    display: none;
+  }
+  #inOutDiv3 {
+    width: auto;
+    margin: 5px;
+    text-align: center;
+    display: none;
+  }
+
+  #inputDiv0 {
+    width: auto;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkslategrey;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  #outputDiv0 {
+    width: auto;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkslategrey;
+    text-align: left;
+    padding-left: 40px;
+  }
+  #exOutputDiv0 {
+    width: auto;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkslategrey;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  #inputDiv1 {
+    width: auto;
+    margin: 5px;
+    display: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkslategrey;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  #outputDiv1 {
+    width: auto;
+    margin: 5px;
+    display: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkslategrey;
+    text-align: left;
+    padding-left: 40px;
+  }
+  #exOutputDiv1 {
+    width: auto;
+    margin: 5px;
+    display: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkslategrey;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  #inputDiv3 {
+    width: auto;
+    margin: 5px;
+    display: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkslategrey;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  #outputDiv3 {
+    width: auto;
+    margin: 5px;
+    display: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkslategrey;
+    text-align: left;
+    padding-left: 40px;
+  }
+  #exOutputDiv3 {
+    width: auto;
+    margin: 5px;
+    display: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: darkslategrey;
+    text-align: left;
+    padding-left: 40px;
+  }
+  #customInputDiv {
+      width: auto;
+      height: auto;
+      display: none;
+      margin-left: 20px;
+      margin-top:10px;
+  }
