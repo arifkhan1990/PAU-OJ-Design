@@ -2,8 +2,8 @@
 body {font-family: 'Work Sans', Arial, sans-serif;font-size: 14px;line-height: normal;}
 
 /*Navigation css here.......................................................................*/
-nav , .pauoj-navbar {max-width: 100%;height: 50px;background: Violet no-repeat;}
-.sticky {position: -webkit-sticky;position: sticky;}
+nav , .pauoj-navbar {width: 100%;height: 50px;background: Violet no-repeat;}
+.sticky {}
 .pauoj-navbar ul {list-style: none;display: block}
 .left-nav {float: left;overflow: hidden; margin-left: 50px;}
 .pauoj-navbar ul li {float: left; display: inline-block;padding: 8px 15px 15px 15px;}
@@ -55,7 +55,7 @@ input, select, button {
 .first-or-not h3 {color:#ccd9ff;}
 
 /* Footer css here ..............................................................*/
-footer, .pauoj-footer {height: 300px;background: palevioletred; margin-top: 0px;}
+footer, .pauoj-footer {height: 300px;background: palevioletred; margin-top: 0px;display: inline-block;}
 .footer-section {width: 100%;height: 150px;background: lightpink;}
 .pauoj-footer:after {content: "";display: table;clear: both;}
 .main-footer {width: 100%;height: 200px;background: palevioletred;margin-top: 0;margin-bottom: 0;}

@@ -1,0 +1,11 @@
+.rankboard-left-containe {
+    width: 69%;
+    height: auto;
+    box-shadow: 0 0 5px darkgrey;
+    border-top: 1px solid #ccc;
+    border-radius: 5px;
+    float: left;
+    display: block;
+    margin: 10px 5px 10px 0px;
+    overflow: visible;
+}
