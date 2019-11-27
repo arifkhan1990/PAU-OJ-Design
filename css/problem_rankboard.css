@@ -21,7 +21,7 @@ ol, ul {list-style: none;}
 
 .language-down-static-part dd {float: right;text-align: right;width: 45px;padding-right: 65px;}
 
-.problem-rank {width: 98%;height: auto;margin: 15px;display: block;overflow: visible;}
+.problem-rank {width: 100%;height: auto;margin: 0px;display: block;overflow: visible;}
 
 .problem-rank-body {width: 98%;height: auto;margin: 15px;display: block;overflow: visible;border: 1px solid darkslategrey;border-radius: 5px;}
 

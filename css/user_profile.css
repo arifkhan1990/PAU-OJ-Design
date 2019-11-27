@@ -70,6 +70,30 @@ body {
     border: 1px solid #bbb;
     border-radius: 5px;
 }
+
+.problem-solution-chart {
+    height: 200px;
+    /* border: 1px solid #bbb;
+    border-radius: 5px; */
+    margin-top: 15px;
+}
+
+.chart-card-left {
+    height: 200px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    float: left;
+    display: block;
+    width: 48.5%;
+}
+.chart-card-right {
+    height: 200px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    float: right;
+    display: block;
+    width: 48.5%;
+}
 .title {
     text-align: center;
     font-weight: 500;
@@ -80,12 +104,14 @@ body {
     margin: 10px;
     margin-left: 60px;
 }
+
 .contest-progress {
     height: auto;
     border: 1px solid #bbb;
     border-radius: 5px;
     margin-top: 10px;
 }
+
 #contestGraph {
   height: 420px;
 }
@@ -123,4 +149,174 @@ body {
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
 }
+.user-info-card {
+    height: auto;
+    /* margin-top: 15px; */
+    display: block;
+}
+.card-detials {
+    height: 88px;
+    margin-top: 10px;
+}
+.card-left {
+    float: left;
+    display: block;
+    width: 48.5%;
+}
 
+.card-right {
+    float: right;
+    display: block;
+    width: 48.5%;
+}
+
+.st-left {
+    float: left;
+}
+
+.st-right {
+    float: right;
+}
+.st-half-box {
+    margin: 0 0 20px 0;
+    width: 46.5%;
+}
+.st-half-box {
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.st-half-box h3 {
+    background: #f3f3f3;
+    border-bottom: #BBB solid 1px;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 7px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.st-number {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+}
+.solved-unsolved-problem-div {
+    height: auto;
+    margin-top: 15px;
+    display: block;
+   /* border: 1px solid purple; */
+}
+
+h4 {
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 .912rem 0;
+    text-align: center;
+}
+
+.row2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.row2 .col.offset-s1 {
+    margin-left: 8.3333333333%;
+}
+
+.row2 .col.s10 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+.row2 .col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+}
+table {
+    width: 100%;
+    display: table;
+}
+table, th, td {
+    border: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table.bordered>thead>tr, table.bordered>tbody>tr {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+#solved-unsolved-table .categories {
+    width: 235px;
+    font-size: 16px;
+}
+#solved-unsolved-table td {
+    text-align: justify;
+}
+td, th {
+    padding: 15px 5px!important;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+table, th, td {
+    border: none;
+}
+td, th {
+    padding: 0;
+}
+
+#solved-unsolved-table .category-pcount {
+    padding-left: 10px;
+}
+.purple-text.text-darken-3 {
+    color: #6a1b9a !important;
+}
+.purple-text {
+    color: #9c27b0 !important;
+}
+
+b, strong {
+    font-weight: bold;
+}
+td a {
+    outline: 0;
+}
+td a {
+    text-decoration: none;
+}
+td a {
+    color: #039be5;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+td a {
+    background-color: transparent;
+    font-size: 14px!important;
+}
+strong {
+    font-weight: 600;
+}
+.solved-problem {
+    color: green;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+}
+
+.unsolved-problem {
+    color: #d9071d;
+    font-weight: bolder;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+}
