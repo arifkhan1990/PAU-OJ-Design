@@ -24,35 +24,6 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script> -->
-<style>
-#readmore{
-display:none;
-}
-.btn-container{
-  margin: auto;
-  height:44px;
-  width:166.23px;
-  
-}
-a:active{
-  color:#ffd323;
-}
-
-button{
-  user-select:none;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  cursor:pointer;
-  border:none;
-  padding:8px;
-  font-size:20px;
-  background:linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-  color:white;
-  font-family:cursive;
-  box-sizing:border-box;
-}
-</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -112,7 +83,7 @@ button{
                             <li>
                                 <span>Last Active:</span>
                                 20 Minutes ago</li>
-                            <li>
+                            <!-- <li>
                                 <span>Browser Rank:</span>
                                 132º </li>
                             <li>
@@ -135,19 +106,19 @@ button{
                                 2,014.1 </li>
                             <li>
                                 <span>Attend Contest:</span>
-                                24 </li>
+                                24 </li>-->
                             <li>
                                 <span>Current Job: </span>
                                 <a href="#">EntertechBd</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <span>Problem Create: </span>
                                 12
                             </li>
                             <li>
                                 <span>Contest Create: </span>
                                 05
-                            </li>
+                            </li> -->
                             <li>
                                 <span>Contribution:</span>
                                 25
@@ -155,8 +126,59 @@ button{
                         </ul>
                     </div>
                     <div class="user-profile-setting">
-                        <button>Settings</button>
+                        <button><a href="../profile/user_edit_profile.html">Settings</a></button>
                     </div>
+                    <div class="information-box">
+                        <h3>FRIENDS</h3>
+                
+                        <ul class="pb-friends">
+                                            <li aria-describedby="tipsy" tabindex="0">
+                                    <a href="/judge/en/profile/408260"><img src="https://www.gravatar.com/avatar/4356550e44da1f4244be99f6a83009b8?s=53&amp;d=robohash&amp;r=g" alt=""></a>                        <span>Saidul Islam</span>
+                                                    </li>
+                                            <li aria-describedby="tipsy" tabindex="0">
+                                    <a href="/judge/en/profile/389354"><img src="https://www.gravatar.com/avatar/d238d7cde26f85c32274d359ce2cda7f?s=53&amp;d=robohash&amp;r=g" alt=""></a>                        <span>Al-Amin Bhuiyan</span>
+                                                    </li>
+                                            <li aria-describedby="tipsy" tabindex="0">
+                                    <a href="/judge/en/profile/354867"><img src="https://www.gravatar.com/avatar/bb1eec06b028cd276060cfc3ceea7f45?s=53&amp;d=robohash&amp;r=g" alt=""></a>                        <span>SAMRAT MANDAL</span>
+                                                    </li>
+                                            <li aria-describedby="tipsy" tabindex="0">
+                                    <a href="/judge/en/profile/350759"><img src="https://www.gravatar.com/avatar/87e4ea2aecf7cccec0c6812338a25ece?s=53&amp;d=robohash&amp;r=g" alt=""></a>                        <span>redoykumar</span>
+                                                    </li>
+                                            <li aria-describedby="tipsy" tabindex="0">
+                                    <a href="/judge/en/profile/400013"><img src="https://www.gravatar.com/avatar/6a8d960415d78fd9c37cd5d867225cf0?s=53&amp;d=robohash&amp;r=g" alt=""></a>                        <span>nasir uddin</span>
+                                                    </li>
+                                            <li aria-describedby="tipsy" tabindex="0">
+                                    <a href="/judge/en/profile/406418"><img src="https://www.gravatar.com/avatar/724c6347ecf8aaae11095782cd99989b?s=53&amp;d=robohash&amp;r=g" alt=""></a>                        <span>Muhammad Manzoor Murshed</span>
+                                                    </li>
+                                    </ul>
+                
+                        <a href="/judge/en/users/friends/59304" class="pb-all-badges">All Friends</a>
+                    </div>
+                    <div class="information-box">
+                        <h3>ACHIEVEMENTS</h3>
+                
+                        <ul class="pb-badges">
+                                            <li class="badge-31" aria-describedby="tipsy" tabindex="0">
+                                    <span>2000 Submissions</span>
+                                </li>
+                                            <li class="badge-50" aria-describedby="tipsy" tabindex="0">
+                                    <span>Github</span>
+                                </li>
+                                            <li class="badge-35" aria-describedby="tipsy" tabindex="0">
+                                    <span>500 Solved Problems</span>
+                                </li>
+                                            <li class="badge-20" aria-describedby="tipsy" tabindex="0">
+                                    <span>Forum</span>
+                                </li>
+                                            <li class="badge-11" aria-describedby="tipsy" tabindex="0">
+                                    <span>500 Accepted Answers</span>
+                                </li>
+                                            <li class="badge-49" aria-describedby="tipsy" tabindex="0">
+                                    <span>Google</span>
+                                </li>
+                                    </ul>
+                
+                        <a href="/judge/en/users/achievements/59304" class="pb-all-badges">Visualize Badges</a>    </div>
                 </div>
             </div>
 
@@ -176,8 +198,9 @@ button{
                     </div>
                     <hr>
                     <figure class="highcharts-figure">
-                        <div class="contest-detials" id="contestGraph">
-                        </div>
+                        <!-- <div class="contest-detials" id="contestGraph">
+                        </div> -->
+                        <div id="chartContainer" style="height: 300px; width: 100%;">
                     </figure>
                 </div>
             <div class="card-detials">
@@ -243,12 +266,14 @@ button{
                         <h2>Submision Analytics</h2>
                     </div>
                     <hr>
+                    <div id="submissionchartContainer" style="height: 280px; width: 100%;"></div>
                 </div>
                 <div class="chart-card-right">
                         <div class="title">
                             <h2>Language Analytics</h2>
                         </div>
                         <hr>
+                        <div id="languagechartContainer" style="height: 280px; width: 100%;"></div>
                 </div>
             </div>
             <div class="solved-unsolved-problem-div">
@@ -5841,6 +5866,7 @@ button{
                     </table>
                 </div>
             </div>
+            </div>
         </div>
     </div>
 
@@ -5898,25 +5924,11 @@ button{
     <div class="sp-footer">
         <p> this site develop by Arif khan &copy; 2018. All rights reserved.</p>
     </div>
-
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="../js/user_profile.js"></script>
     <script>
 
-$(document).ready(function() {
-  $("#toggle").click(function() {
-    var elem = $("#toggle").text();
-    if (elem == "Read More") {
-      //Stuff to do when btn is in the read more state
-      $("#toggle").text("Read Less");
-      $("#readmore").slideDown();
-    } else {
-      //Stuff to do when btn is in the read less state
-      $("#toggle").text("Read More");
-      $("#readmore").slideUp();
-    }
-  });
-});
-    </script>
+</script>
 </body>
 
 </html>

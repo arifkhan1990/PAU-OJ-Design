@@ -1,3 +1,153 @@
+window.onload = function () {
+    CanvasJS.addColorSet("submissionColor",
+            [//colorSet Array
+
+            "#27AE60",
+            "#E74C3C",
+            "#F1C40F",
+            "#00AAAA",
+            "#2980B9",
+            "#86862C"          
+            ]);
+    CanvasJS.addColorSet("languageColor",
+            [//colorSet Array
+
+            "#3498db",
+            "#2980b9",
+            "#e67e22",
+            "#e74c3c",
+            "#c0392b",
+            "#9b59b6",
+            "#c02b42",
+            "#4a48d6",
+            "#7d9e42",
+            "#34d0db",
+            "#1a6199",
+            "#f97603",
+            "#4a4996",
+            "#b17a4d", 
+            "#ed7084"      
+            ]);
+var chart1 = new CanvasJS.Chart("languagechartContainer", {
+    animationEnabled: true,
+    colorSet: "languageColor",
+title:{
+    text: "",
+    horizontalAlign: "left"
+    },
+    legend: {
+    horizontalAlign: "left",
+    verticalAlign: "center",
+    cursor: "pointer",
+    itemclick: explodePie,
+   }, 
+data: [{
+    type: "doughnut",
+    startAngle: 60,
+    //innerRadius: 60,
+            indexLabelFontSize: 13,
+            showInLegend: true,
+    indexLabel: "{label} - #percent%",
+    toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+    dataPoints: [
+        { y: 123, label: "C",legendText: "C" },
+                    { y: 1128, label: "C++",legendText: "C++" },
+                    { y: 0, label: "C#",legendText: "C#" },
+        { y: 111, label: "Java",legendText: "Java" },
+        { y: 7, label: "Javascript",legendText: "Javascript"},
+        { y: 315, label: "Python",legendText: "Python"},
+        { y: 6, label: "GO",legendText: "GO"}
+    ]
+}]
+});
+
+var chart2 = new CanvasJS.Chart("submissionchartContainer", {
+            exportEnabled: true,
+            animationEnabled: true,
+            colorSet: "submissionColor",
+            title:{
+                    text: ""
+            },
+            legend:{
+                    horizontalAlign: "left",
+                    cursor: "pointer",
+                    itemclick: explodePie,
+                    verticalAlign: "bottom",
+
+            },
+            data: [{
+                    type: "pie",
+                    showInLegend: true,
+                    indexLabelFontSize: 11,
+                    toolTipContent: "{name}: <strong>{y}%</strong>",
+                    indexLabel: "{name} - {y}%",
+                    dataPoints: [
+                            { y: 46, name: "Accepted", exploded: true },
+                            { y: 40, name: "Wrong Answer" },
+                            { y: 3, name: "Compilation Error" },
+                            { y: 2, name: "Runtime Error" },
+                            { y: 4, name: "Time limit Exceeded" },
+                            { y: 5, name: "Presentation Error" }
+                    ]
+            }]
+    });
+var chart3 = new CanvasJS.Chart("chartContainer",{
+            axisY:{
+            title: "",
+            gridThickness: 1,
+            gridColor: "#ccc"
+            },
+            title:{
+                    text: ""
+            },
+
+            legend: {
+                    cursor:"pointer",
+                    horizontalAlign: "left", // "center" , "right"
+                    verticalAlign: "center",  // "top" , "bottom"
+                    fontSize: 15,
+                    itemclick: function(e){
+                    alert( "Legend item clicked with type : " + e.dataSeries.type );
+                    }
+
+            },
+            data: [
+            {
+            type: "line",
+            showInLegend: true,
+            legendText: "Score",
+            dataPoints: [
+            {label: "Jan", y: 100 },
+            {label: "Feb", y: 155},
+            {label: "Mar", y: 170},
+            {label: "May", y: 140 },
+            {label: "Jun", y: 135 },
+            {label: "Jul", y: 190 },
+            {label: "Aug", y: 240},
+            {label: "Sep", y: 320 },      
+            {label: "Oct", y: 334 },
+            {label: "Nov", y: 380 },
+            {label: "Dec", y: 400 },
+            ]}
+    ]
+    });
+chart1.render();
+chart2.render();
+chart3.render();
+}
+
+function explodePie (e) {
+            if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+                    e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+            } else {
+                    e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+            }
+            e.chart.render();
+    
+    }
+
+
+
 
 function randomDate(start, end) {
     var date = new Date(+start + Math.random() * (end - start));

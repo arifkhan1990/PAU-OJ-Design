@@ -72,14 +72,15 @@ body {
 }
 
 .problem-solution-chart {
-    height: 200px;
+    height: 350px;
     /* border: 1px solid #bbb;
     border-radius: 5px; */
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .chart-card-left {
-    height: 200px;
+    height: auto;
     border: 1px solid #bbb;
     border-radius: 5px;
     float: left;
@@ -87,7 +88,7 @@ body {
     width: 48.5%;
 }
 .chart-card-right {
-    height: 200px;
+    height: auto;
     border: 1px solid #bbb;
     border-radius: 5px;
     float: right;
@@ -319,4 +320,102 @@ strong {
     font-weight: bolder;
     line-height: 1.5;
     font-family: "Roboto", sans-serif;
+}
+
+/* Firend card */
+.information-box {
+    background: #FFF;
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+}
+
+.information-box h3 {
+    background: #f3f3f3;
+    color: #454545;
+    font-size: 12px;
+    padding: 7px 0;
+    text-align: center;
+    border-bottom: 1px solid #BBB;
+}
+.pb-badges, .pb-friends {
+    padding: 10px 0;
+    text-align: center;
+}
+.pb-all-badges {
+    border-top: #BBB solid 1px;
+    display: block;
+    font-size: 10px;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+ a {
+    color: #454545;
+    outline: 0;
+    text-decoration: none;
+}
+
+.pb-friends li {
+    border: #bbb solid 1px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.pb-badges li, .pb-friends li {
+    display: inline-block;
+    height: 53px;
+    margin: 1px;
+    width: 53px;
+}
+
+.pb-friends a {
+    display: inline-block;
+}
+
+.pb-badges li span, .pb-friends li span {
+    display: none;
+}
+
+.pb-badges li {
+    background-image: url(https://resources.urionlinejudge.com.br/judge/img/5.0/badges.26082018.png);
+    background-repeat: no-repeat;
+}
+
+.pb-badges li, .pb-friends li {
+    display: inline-block;
+    height: 53px;
+    margin: 1px;
+    width: 53px;
+}
+.badge-31 {
+    background-position: -106px -212px;
+}
+
+.badge-50 {
+    background-position: -477px -159px;
+}
+
+.badge-35 {
+    background-position: -159px -106px;
+}
+
+.badge-20 {
+    background-position: -212px -212px;
+}
+
+.badge-11 {
+    background-position: -53px -106px;
+}
+
+.badge-49 {
+    background-position: -530px 0;
+}
+
+.user-profile-setting a {
+    text-decoration: none;
 }
