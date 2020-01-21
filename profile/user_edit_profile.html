@@ -18,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="../Calendar-Heatmap/dist/jquery.CalendarHeatmap.min.js"></script>
+    <link rel="stylesheet" href="../build/css/intlTelInput.css">
     <style> 
 
 </style>
@@ -65,13 +66,14 @@
         <div class="problem-row-main-part">
 
             <div class="right-side">
-                <div class="user-profile-right-containe">
+                <div class="user-profile-right-containe" style="border: none!important; box-shadow: none!important;">
                     <div class="edit-sidebar">
-                            <h2>Account</h2>
+                            <h1 style="text-align: center;">Account</h1>
                             <ul class="menu-class">
+                                <li class="lg-item"><a href="../profile/user_profile.html">Profile</a></li>
                                 <li class="active lg-item"><a href="../profile/user_edit_profile.html" class="active">Settings</a></li>
-                                <li class="lg-item"> <a href="">Password</a> </li>
-                                <li class="lg-item"> <a href="">Email Notifications</a> </li>
+                                <li class="lg-item"> <a href="../profile/change_password.html">Change Password</a> </li>
+                                <li class="lg-item"> <a href="../profile/email_notification.html">Email Notifications</a> </li>
                                 <li class="lg-item"> <a href="">Teams</a> </li>
                             </ul>
                     </div>
@@ -104,19 +106,10 @@
                     <div class="card-header">
                         <h4 class="title">Edit Profile</h4>
                     </div>
-                    <div class="card-body">
-                        <form>
+                    <div class="card-body" style="">
+                        <form action="" method="">
                             <div class="row-user-edit">
-                                <div class="col-md-5">
-                                    <div  class="form-group has-label"><label >
-                                            Company
-                                            <!----></label>
-                                        <!----><input  aria-describedby="addon-right addon-left" type="text"
-                                            disabled="disabled" placeholder="Paper dashboard" class="form-control">
-                                        <!---->
-                                        <!---->
-                                    </div>
-                                </div>
+
                                 <div class="col-md-3">
                                     <div  class="form-group has-label"><label >
                                             Username
@@ -133,6 +126,16 @@
                                             <!----></label>
                                         <!----><input  aria-describedby="addon-right addon-left" type="email"
                                             placeholder="Email" class="form-control">
+                                        <!---->
+                                        <!---->
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div  class="form-group has-label"><label  style="padding-bottom: 5px;">
+                                            Phone No
+                                            <!----></label>
+                                         <input class="form-control" aria-describedby="addon-right addon-left" 
+                                         type="tel" placeholder="" id="telephone">
                                         <!---->
                                         <!---->
                                     </div>
@@ -465,7 +468,7 @@
                             </div>
                             <div class="row-user-edit">
                                 <div class="col-md-12">
-                                    <div class="form-group"><label>About Me</label><br /><textarea rows="5" cols="119"
+                                    <div class="form-group"><label>About Me</label><br /><textarea rows="5" cols="104"
                                             placeholder="Here can be your description" class="form-control border-input"></textarea>
                                     </div>
                                 </div>
@@ -536,66 +539,67 @@
     <div class="sp-footer">
         <p> this site develop by Arif khan &copy; 2018. All rights reserved.</p>
     </div>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script src="../js/user_profile.js"></script>
+    <script src="../build/js/intlTelInput.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../build/js/intlTelInput-jquery.min.js"></script> 
     <script>
 
 </script>
 <script> 
-        function GEEKFORGEEKS()                                    
-        { 
-            var name = document.forms["RegForm"]["Name"];               
-            var email = document.forms["RegForm"]["EMail"];    
-            var phone = document.forms["RegForm"]["Telephone"];  
-            var what =  document.forms["RegForm"]["Subject"];  
-            var password = document.forms["RegForm"]["Password"];  
-            var address = document.forms["RegForm"]["Address"];  
-        
-            if (name.value == "")                                  
-            { 
-                window.alert("Please enter your name."); 
-                name.focus(); 
-                return false; 
-            } 
-        
-            if (address.value == "")                               
-            { 
-                window.alert("Please enter your address."); 
-                address.focus(); 
-                return false; 
-            } 
-            
-            if (email.value == "")                                   
-            { 
-                window.alert("Please enter a valid e-mail address."); 
-                email.focus(); 
-                return false; 
-            } 
-        
-            if (phone.value == "")                           
-            { 
-                window.alert("Please enter your telephone number."); 
-                phone.focus(); 
-                return false; 
-            } 
-        
-            if (password.value == "")                        
-            { 
-                window.alert("Please enter your password"); 
-                password.focus(); 
-                return false; 
-            } 
-        
-            if (what.selectedIndex < 1)                  
-            { 
-                alert("Please enter your course."); 
-                what.focus(); 
-                return false; 
-            } 
-        
-            return true; 
-        }
-        </script> 
+    // jQuery 
+    $("#telephone").intlTelInput({
+        // whether or not to allow the dropdown
+        allowDropdown: true,
+
+        // if there is just a dial code in the input: remove it on blur, and re-add it on focus
+        autoHideDialCode: true,
+
+        // add a placeholder in the input with an example number for the selected country
+        autoPlaceholder: "polite",
+
+        // modify the auto placeholder
+        customPlaceholder: null,
+
+        // append menu to specified element
+        dropdownContainer: null,
+
+        // don't display these countries
+        excludeCountries: [],
+
+        // format the input value during initialisation and on setNumber
+        formatOnDisplay: true,
+
+        // geoIp lookup function
+        geoIpLookup: null,
+
+        // inject a hidden input with this name, and on submit, populate it with the result of getNumber
+        hiddenInput: "",
+
+        // initial country
+        initialCountry: "BD",
+
+        // localized country names e.g. { 'de': 'Deutschland' }
+        localizedCountries: null,
+
+        // don't insert international dial codes
+        nationalMode: true,
+
+        // display only these countries
+        onlyCountries: [],
+
+        // number type to use for placeholders
+        placeholderNumberType: "MOBILE",
+
+        // the countries at the top of the list. defaults to united states and united kingdom
+        preferredCountries: [ "us", "gb" ],
+
+        // display the country dial code next to the selected flag so it's not part of the typed number
+        separateDialCode: true,
+
+        // specify the path to the libphonenumber script to enable validation/formatting
+        utilsScript: ""
+            });
+</script> 
 </body>
 
 </html>

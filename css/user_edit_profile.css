@@ -132,8 +132,21 @@ label {
 
 .form-group .el-input__inner, .form-group .form-control, .form-group .input-group .el-input__inner, .input-group .form-control, .input-group .form-group .el-input__inner {
     padding: 10px 10px 10px 10px;
+    font-size: 14px!important;
 }
 .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
     opacity: 1;
+}
+.btn-wd {
+    min-width: 140px;
+}
+
+.btn-info {
+    background-color: #51bcda;
+    color: #fff;
+}
+
+.btn-info:hover {
+    background-color: #339cb9;
 }
