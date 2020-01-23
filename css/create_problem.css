@@ -41,8 +41,8 @@ body {
 	display: none;
 }
 /*inputs*/
-#msform input, #msform textarea {
-	padding: 15px;
+#msform input,#msform select, #msform textarea {
+	/* padding: 15px; */
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	margin-bottom: 10px;
@@ -51,6 +51,7 @@ body {
 	font-family: montserrat;
 	color: #2C3E50;
 	font-size: 13px;
+	margin-bottom: 20px;
 }
 /*buttons*/
 #msform .action-button {
@@ -64,7 +65,7 @@ body {
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
-#msform .action-button:hover, #msform .action-button:focus {
+#msform .action-button:hover, #msform .action-button:focus,#msform .action-button:hover {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 /*headings*/
@@ -72,7 +73,7 @@ body {
 	font-size: 15px;
 	text-transform: uppercase;
 	color: #2C3E50;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 .fs-subtitle {
 	font-weight: normal;
@@ -141,6 +142,12 @@ body {
     padding-right: 20px;
     overflow: visible; 
 }
-.green {
-    border: 2px solid green;
-}
+.myClickState {
+	border-color: lime;
+  }
+  #msform input:focus, #msform select:focus,#msform textarea:focus {
+	border: 1px solid green !important;
+	box-shadow: 0 0 3px green !important;
+	-moz-box-shadow: 0 0 3px green !important;
+	-webkit-box-shadow: 0 0 3px green !important;
+	}
