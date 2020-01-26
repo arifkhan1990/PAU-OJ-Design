@@ -18,7 +18,7 @@ body {
 }
 /*form styles*/
 #msform {
-	width: 1000px;
+	width: 1100px;
 	margin: 50px auto;
 	text-align: center;
 	position: relative;
@@ -150,4 +150,22 @@ body {
 	box-shadow: 0 0 3px green !important;
 	-moz-box-shadow: 0 0 3px green !important;
 	-webkit-box-shadow: 0 0 3px green !important;
+	}
+	.left-create-problemll-part {
+		display: block;
+	}
+	label {
+		float: left;
+		font-size: 16px;
+		margin-top: 25px;
+		font-weight: 500;
+		color:#76819ded;
+		margin-bottom: 20px;
+		width: 25%;
+		text-align: left;
+	}
+
+	.input_part {
+		width:75%;
+		float: right;
 	}

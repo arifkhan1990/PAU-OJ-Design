@@ -57,7 +57,10 @@
             <!-- fieldsets -->
             <fieldset>
               <h2 class="fs-title">Problem Basic Info</h2>
-              <select name="problem_category" id="" style="font-size: 12px;opacity: .9;">
+              <div class="left-create-problemll-part">
+                <label for="">Problem Category </label>
+                    <div class="input_part">
+                        <select name="problem_category" id="" style="font-size: 12px;opacity: .9;">
                   <option value="">Select Category</option>
                   <option value="beginner">Beginner</option>
                   <option value="adhoc">Adhoc</option>
@@ -68,19 +71,45 @@
                   <option value="math">Mathmatics</option>
                   <option value="string">String</option>
                   <option value="geometry">Geometry</option>
-              </select>
-              <input type="text" name="problem_tag" placeholder="Problem Tag" />
-              <select name="problem_difficulty" id="" style="font-size: 12px;opacity: .9;">
+                        </select>            
+                    </div>
+              </div>
+ 
+             <div class="left-create-problemll-part">
+               <label for="">Problem Difficulty </label>
+                    <div class="input_part">
+                        <select name="problem_difficulty" id="" style="font-size: 12px;opacity: .9;">
                 <option value="">Select Difficulty</option>
                 <option value="supper_easy">Supper Easy</option>
                 <option value="easy">Easy</option>
                 <option value="medium">Medium</option>
                 <option value="hard">Hard</option>
                 <option value="expert">Expert</option>
-            </select>
-              <input type="text" name="time_limit" placeholder="Time Limit" />
-              <input type="text" name="memory_limit" placeholder="Memory Limit" />
-              <select name="problem_point" id="" style="font-size: 12px;opacity: .9;">
+                        </select>
+                    </div>
+             </div>
+             <div class="left-create-problemll-part">
+                <label for="">Problem Tags </label>
+                    <div class="input_part">
+                        <input type="text" name="problem_tag" placeholder="Problem Tag" />
+                   </div>
+              </div>
+             <div class="left-create-problemll-part">
+               <label for="" style="padding-top: 5px;">Time Limits </label>
+                    <div class="input_part">
+                        <input type="text" name="time_limit" placeholder="Time Limit" />
+                    </div>
+             </div>
+             <div class="left-create-problemll-part">
+                <label for="" style="padding-top: 5px;">Memory Limits </label>
+                    <div class="input_part">
+                        <input type="text" name="memory_limit" placeholder="Memory Limit" />
+                    </div>
+             </div>
+             <div class="left-create-problemll-part">
+                <label for="" style="padding-top: 5px;">Problem Points </label>
+                    <div class="input_part">
+                        <select name="problem_point" id="" style="font-size: 12px;opacity: .9;">
                 <option value="">Select Points</option>
                 <option value="10">10</option>
                 <option value="15">15</option>
@@ -95,43 +124,138 @@
                 <option value="90">90</option>
                 <option value="100">100</option>
                 <option value="120">120</option>
-            </select>
-              <input type="text" name="author_name" placeholder="Orginal Author" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+                        </select>
+                    </div>
+             </div>
+             <div class="left-create-problemll-part">
+                <label for="" style="padding-top: 5px;">Problem Orginal Author </label>
+                    <div class="input_part">
+                        <input type="text" name="author_name" placeholder="Orginal Author" />
+                    </div>
+             </div>
+             <div class="left-create-problemll-part">
+                <label for="" >Orginal Judge Problem</label>
+                    <div class="input_part">
+                        <select name="judge_name" id="" style="font-size: 12px;opacity: .9;">
+                <option value="">--Select judge name--</option>
+                <option value="uva">Uva</option>
+                <option value="uri">Uri</option>
+                <option value="codeforce">Codeforce</option>
+                <option value="codechef">Codechef</option>
+                <option value="hackerrank">Hackerrank</option>
+                <option value="hackerearth">Hackerearth</option>
+                <option value="atcoder">AtCoder</option>
+                <option value="spoj">Spoj</option>
+                        </select>
+                    </div>
+             </div>
+             <div class="left-create-problemll-part">
+                <label for="" >Problem Id </label>
+                    <div class="input_part">
+                        <input type="text" name="Problem_id" placeholder="Problem Id" />
+                    </div>
+             </div>
+             <!-- <div class="left-create-problemll-part">
+                <label for="" ></label>
+                    <div class="input_part"> -->
+                        <input type="button" name="next" class="next action-button" value="Next" style="float:right;"/>
+                    <!-- </div>
+             </div> -->
+
             </fieldset>
             <fieldset>
               <h2 class="fs-title">Problem Details</h2>
+              <div class="left-create-problemll-part">
+                <label for="">Problem Title </label>
+                <div class="input_part">
               <input type="text" name="problem_title" placeholder="Problem Title" class=""/>
+              </div>
+              </div>
+              <div class="left-create-problemll-part">
+                <label for="">Problem Short Summary </label>
+                <div class="input_part">
               <textarea style="padding: 15px;" rows="2" id="preview" class="description span16" placeholder="Write a short summary about the challenge"></textarea>
+              </div>
+              </div>
+              <div class="left-create-problemll-part">
+                <label for="">Problem Discription </label>
+                <div class="input_part">
               <textarea id="problemDescription" placeholder="Write a Problem Statement">Write a Problem Statement</textarea>
+              </div>
+              </div>
               <input type="button" name="previous" class="previous action-button" value="Previous" />
               <input type="button" name="next" class="next action-button" value="Next" />
             </fieldset>
             <fieldset>
               <h2 class="fs-title" style="padding-bottom: 10px;">Sample I/0</h2>
-              <textarea id="problemConstraints">Problem Constraints</textarea>
+              <div class="left-create-problemll-part">
+                <label for="">Problem Constraints </label>
+                <div class="input_part">
+              <textarea id="problemConstraints"></textarea>
+              </div>
+              </div>
+              <div class="left-create-problemll-part">
+                <label for="">Problem Sample Input </label>
+                <div class="input_part">
               <div style="padding-bottom: 20px;"></div>
-              <textarea id="problemSampleInput">Problem Sample Input</textarea>
+              <textarea id="problemSampleInput"></textarea>
+              </div>
+              </div>
+              <div class="left-create-problemll-part">
+                <label for="">Problem Sample Output </label>
+                <div class="input_part">
               <div style="padding-bottom: 20px;"></div>
               <textarea id="problemSampleOutput">Problem Sample Output</textarea>
+              </div>
+              </div>
               <div style="padding-bottom: 20px;"></div>
               <input type="button" name="previous" class="previous action-button" value="Previous" />
               <input type="button" name="next" class="next action-button" value="Next" />
             </fieldset>
             <fieldset>
                 <h2 class="fs-title">Test Case</h2>
+                <div class="left-create-problemll-part">
+                    <label for="">Problem Category </label>
+                    <div class="input_part">
                 <input type="text" name="fname" placeholder="First Name" />
+                </div>
+                </div>
+                <div class="left-create-problemll-part">
+                    <label for="">Problem Category </label>
+                    <div class="input_part">
                 <input type="text" name="lname" placeholder="Last Name" />
+                </div>
+                </div>
+                <div class="left-create-problemll-part">
+                    <label for="">Problem Category </label>
+                    <div class="input_part">
                 <input type="text" name="phone" placeholder="Phone" />
+                </div>
+                </div>
+                <div class="left-create-problemll-part">
+                    <label for="">Problem Category </label>
+                    <div class="input_part">
                 <textarea name="address" placeholder="Address"></textarea>
+                </div>
+                </div>
                 <input type="button" name="previous" class="previous action-button" value="Previous" />
                 <input type="button" name="next" class="next action-button" value="Next" />
             </fieldset>
             <fieldset>
                 <h2 class="fs-title" style="padding-bottom: 10px;">Editorial & Code</h2>
-                <textarea id="problemEditorial">Problem Editorial</textarea>
+                <div class="left-create-problemll-part">
+                    <label for="">Problem Editorial </label>
+                    <div class="input_part">
+                <textarea id="problemEditorial"></textarea>
+                </div>
+                </div>
+                <div class="left-create-problemll-part">
+                    <label for="">Problem Solution Code </label>
+                    <div class="input_part">
                 <div style="padding-bottom: 20px;"></div>
-                <textarea id="problemSolutionCode">Problem Solution Code</textarea>
+                <textarea id="problemSolutionCode"></textarea>
+                </div>
+                </div>
                 <div style="padding-bottom: 20px;"></div>
                 <input type="button" name="previous" class="previous action-button" value="Previous" />
                 <input type="submit" name="submit" class="submit action-button" value="Submit" />
