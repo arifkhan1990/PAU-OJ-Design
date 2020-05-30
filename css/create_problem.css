@@ -2,20 +2,24 @@
 
 
 /*basic reset*/
-* {margin: 0; padding: 0;}
+* {
+	margin: 0;
+	padding: 0;
+}
 
 html {
 	height: 100%;
 	/*Image only BG fallback*/
-	
+
 	/*background = gradient + image pattern combo*/
-	background: 
+	background:
 		linear-gradient(rgba(184, 139, 243, 0.6), rgba(208, 131, 238, 0.6));
 }
 
 body {
 	font-family: montserrat, arial, verdana;
 }
+
 /*form styles*/
 #msform {
 	width: 1100px;
@@ -23,6 +27,7 @@ body {
 	text-align: center;
 	position: relative;
 }
+
 #msform fieldset {
 	background: white;
 	border: 0 none;
@@ -32,16 +37,22 @@ body {
 	box-sizing: border-box;
 	width: 80%;
 	margin: 0 10%;
-	
+
 	/*stacking fieldsets above each other*/
 	position: relative;
 }
+
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
 	display: none;
 }
+
 /*inputs*/
-#msform input,#msform select, #msform textarea {
+#msform input,
+#msform select,
+#msform textarea,
+.add-row,
+.remove-row {
 	/* padding: 15px; */
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -51,8 +62,14 @@ body {
 	font-family: montserrat;
 	color: #2C3E50;
 	font-size: 13px;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
+	height: 45px;
 }
+
+.description {
+	height: 100px !important;
+}
+
 /*buttons*/
 #msform .action-button {
 	width: 100px;
@@ -65,9 +82,51 @@ body {
 	padding: 10px 5px;
 	margin: 10px 5px;
 }
-#msform .action-button:hover, #msform .action-button:focus,#msform .action-button:hover {
+
+#msform .action-button:hover,
+#msform .action-button:focus,
+#msform .action-button:hover {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
+
+#msform .add-row {
+	width: 100px;
+	background: rgb(23, 84, 124);
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	float: left;
+}
+
+#msform .add-row:hover,
+#msform .add-row:focus,
+#msform .add-row:hover {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(39, 109, 174);
+}
+
+#msform .remove-row {
+	width: 100px;
+	background: rgb(212, 41, 41);
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	float: left;
+}
+
+#msform .remove-row:hover,
+#msform .remove-row:focus,
+#msform .remove-row:hover {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(145, 16, 16);
+}
+
 /*headings*/
 .fs-title {
 	font-size: 15px;
@@ -75,12 +134,14 @@ body {
 	color: #2C3E50;
 	margin-bottom: 20px;
 }
+
 .fs-subtitle {
 	font-weight: normal;
 	font-size: 13px;
 	color: #666;
 	margin-bottom: 20px;
 }
+
 /*progressbar*/
 #progressbar {
 	margin-bottom: 40px;
@@ -88,15 +149,17 @@ body {
 	/*CSS counters to number the steps*/
 	counter-reset: step;
 }
+
 #progressbar li {
-    list-style-type: none;
-    color:white;
-    text-transform: uppercase;
-    font-size: 12px;
-    width: 20%;
-    float: left;
-    position: relative;
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	width: 16.5%;
+	float: left;
+	position: relative;
 }
+
 #progressbar li:before {
 	content: counter(step);
 	counter-increment: step;
@@ -109,6 +172,7 @@ body {
 	border-radius: 3px;
 	margin: 0 auto 5px auto;
 }
+
 /*progressbar connectors*/
 #progressbar li:after {
 	content: '';
@@ -118,54 +182,106 @@ body {
 	position: absolute;
 	left: -50%;
 	top: 9px;
-	z-index: -1; /*put it behind the numbers*/
+	z-index: -1;
+	/*put it behind the numbers*/
 }
+
 #progressbar li:first-child:after {
 	/*connector not needed before the first step*/
-	content: none; 
+	content: none;
 }
+
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
+#progressbar li.active:before,
+#progressbar li.active:after {
 	background: #27AE60;
 	color: white;
 }
 
 
 
-.create-problem-stage-part {width: 100%;height: auto;}
-.create-problem-form-part {
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 1270px;
-    padding-left: 20px;
-    padding-right: 20px;
-    overflow: visible; 
+.create-problem-stage-part {
+	width: 100%;
+	height: auto;
 }
+
+.create-problem-form-part {
+	box-sizing: border-box;
+	margin: 0 auto;
+	width: 1270px;
+	padding-left: 20px;
+	padding-right: 20px;
+	overflow: visible;
+}
+
 .myClickState {
 	border-color: lime;
-  }
-  #msform input:focus, #msform select:focus,#msform textarea:focus {
+}
+
+#msform input:focus,
+#msform select:focus,
+#msform textarea:focus {
 	border: 1px solid green !important;
 	box-shadow: 0 0 3px green !important;
 	-moz-box-shadow: 0 0 3px green !important;
 	-webkit-box-shadow: 0 0 3px green !important;
-	}
-	.left-create-problemll-part {
-		display: block;
-	}
-	label {
-		float: left;
-		font-size: 16px;
-		margin-top: 25px;
-		font-weight: 500;
-		color:#76819ded;
-		margin-bottom: 20px;
-		width: 25%;
-		text-align: left;
-	}
+}
 
-	.input_part {
-		width:75%;
-		float: right;
-	}
+.left-create-problemll-part {
+	display: block;
+}
+
+label {
+	float: left;
+	font-size: 16px;
+	margin-top: 15px;
+	font-weight: 500;
+	color: #76819ded;
+	/* margin-bottom: 20px; */
+	/* width: 25%; */
+	text-align: left;
+}
+
+.input_part {
+	width: 75%;
+	float: right;
+	height: 60px;
+}
+
+.label-part {
+	float: left;
+	width: 25%;
+	height: 60px;
+}
+
+.label-part2 {
+	float: left;
+	width: 25%;
+	height: 200px;
+}
+
+.input_part2 {
+	width: 75%;
+	float: right;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.add-remove-buttons {
+	clear: both;
+	padding-top: 10px;
+}
+
+.clone-test-case {
+	width: 30%;
+	float: left;
+	margin-left: 200px;
+	background: #07a9;
+}
+
+.remove-test-case {
+	width: 30%;
+	float: right;
+	background: rgb(207, 27, 27);
+}

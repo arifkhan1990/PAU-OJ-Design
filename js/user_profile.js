@@ -1,16 +1,16 @@
 window.onload = function () {
     CanvasJS.addColorSet("submissionColor",
-            [//colorSet Array
+        [ //colorSet Array
 
             "#27AE60",
             "#E74C3C",
             "#F1C40F",
             "#00AAAA",
             "#2980B9",
-            "#86862C"          
-            ]);
+            "#86862C"
+        ]);
     CanvasJS.addColorSet("languageColor",
-            [//colorSet Array
+        [ //colorSet Array
 
             "#3498db",
             "#2980b9",
@@ -25,126 +25,202 @@ window.onload = function () {
             "#1a6199",
             "#f97603",
             "#4a4996",
-            "#b17a4d", 
-            "#ed7084"      
-            ]);
-var chart1 = new CanvasJS.Chart("languagechartContainer", {
-    animationEnabled: true,
-    colorSet: "languageColor",
-title:{
-    text: "",
-    horizontalAlign: "left"
-    },
-    legend: {
-    horizontalAlign: "left",
-    verticalAlign: "center",
-    cursor: "pointer",
-    itemclick: explodePie,
-   }, 
-data: [{
-    type: "doughnut",
-    startAngle: 60,
-    //innerRadius: 60,
+            "#b17a4d",
+            "#ed7084"
+        ]);
+    var chart1 = new CanvasJS.Chart("languagechartContainer", {
+        animationEnabled: true,
+        colorSet: "languageColor",
+        title: {
+            text: "",
+            horizontalAlign: "left"
+        },
+        legend: {
+            horizontalAlign: "left",
+            verticalAlign: "center",
+            cursor: "pointer",
+            itemclick: explodePie,
+        },
+        data: [{
+            type: "doughnut",
+            startAngle: 60,
+            //innerRadius: 60,
             indexLabelFontSize: 13,
             showInLegend: true,
-    indexLabel: "{label} - #percent%",
-    toolTipContent: "<b>{label}:</b> {y} (#percent%)",
-    dataPoints: [
-        { y: 123, label: "C",legendText: "C" },
-                    { y: 1128, label: "C++",legendText: "C++" },
-                    { y: 0, label: "C#",legendText: "C#" },
-        { y: 111, label: "Java",legendText: "Java" },
-        { y: 7, label: "Javascript",legendText: "Javascript"},
-        { y: 315, label: "Python",legendText: "Python"},
-        { y: 6, label: "GO",legendText: "GO"}
-    ]
-}]
-});
-
-var chart2 = new CanvasJS.Chart("submissionchartContainer", {
-            exportEnabled: true,
-            animationEnabled: true,
-            colorSet: "submissionColor",
-            title:{
-                    text: ""
-            },
-            legend:{
-                    horizontalAlign: "left",
-                    cursor: "pointer",
-                    itemclick: explodePie,
-                    verticalAlign: "bottom",
-
-            },
-            data: [{
-                    type: "pie",
-                    showInLegend: true,
-                    indexLabelFontSize: 11,
-                    toolTipContent: "{name}: <strong>{y}%</strong>",
-                    indexLabel: "{name} - {y}%",
-                    dataPoints: [
-                            { y: 46, name: "Accepted", exploded: true },
-                            { y: 40, name: "Wrong Answer" },
-                            { y: 3, name: "Compilation Error" },
-                            { y: 2, name: "Runtime Error" },
-                            { y: 4, name: "Time limit Exceeded" },
-                            { y: 5, name: "Presentation Error" }
-                    ]
-            }]
+            indexLabel: "{label} - #percent%",
+            toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+            dataPoints: [{
+                    y: 123,
+                    label: "C",
+                    legendText: "C"
+                },
+                {
+                    y: 1128,
+                    label: "C++",
+                    legendText: "C++"
+                },
+                {
+                    y: 0,
+                    label: "C#",
+                    legendText: "C#"
+                },
+                {
+                    y: 111,
+                    label: "Java",
+                    legendText: "Java"
+                },
+                {
+                    y: 7,
+                    label: "Javascript",
+                    legendText: "Javascript"
+                },
+                {
+                    y: 315,
+                    label: "Python",
+                    legendText: "Python"
+                },
+                {
+                    y: 6,
+                    label: "GO",
+                    legendText: "GO"
+                }
+            ]
+        }]
     });
-var chart3 = new CanvasJS.Chart("chartContainer",{
-            axisY:{
+
+    var chart2 = new CanvasJS.Chart("submissionchartContainer", {
+        exportEnabled: true,
+        animationEnabled: true,
+        colorSet: "submissionColor",
+        title: {
+            text: ""
+        },
+        legend: {
+            horizontalAlign: "left",
+            cursor: "pointer",
+            itemclick: explodePie,
+            verticalAlign: "bottom",
+
+        },
+        data: [{
+            type: "pie",
+            showInLegend: true,
+            indexLabelFontSize: 11,
+            toolTipContent: "{name}: <strong>{y}%</strong>",
+            indexLabel: "{name} - {y}%",
+            dataPoints: [{
+                    y: 46,
+                    name: "Accepted",
+                    exploded: true
+                },
+                {
+                    y: 40,
+                    name: "Wrong Answer"
+                },
+                {
+                    y: 3,
+                    name: "Compilation Error"
+                },
+                {
+                    y: 2,
+                    name: "Runtime Error"
+                },
+                {
+                    y: 4,
+                    name: "Time limit Exceeded"
+                },
+                {
+                    y: 5,
+                    name: "Presentation Error"
+                }
+            ]
+        }]
+    });
+    var chart3 = new CanvasJS.Chart("chartContainer", {
+        axisY: {
             title: "",
             gridThickness: 1,
             gridColor: "#ccc"
-            },
-            title:{
-                    text: ""
-            },
+        },
+        title: {
+            text: ""
+        },
 
-            legend: {
-                    cursor:"pointer",
-                    horizontalAlign: "left", // "center" , "right"
-                    verticalAlign: "center",  // "top" , "bottom"
-                    fontSize: 15,
-                    itemclick: function(e){
-                    alert( "Legend item clicked with type : " + e.dataSeries.type );
-                    }
+        legend: {
+            cursor: "pointer",
+            horizontalAlign: "left", // "center" , "right"
+            verticalAlign: "center", // "top" , "bottom"
+            fontSize: 15,
+            itemclick: function (e) {
+                alert("Legend item clicked with type : " + e.dataSeries.type);
+            }
 
-            },
-            data: [
-            {
+        },
+        data: [{
             type: "line",
             showInLegend: true,
             legendText: "Score",
-            dataPoints: [
-            {label: "Jan", y: 100 },
-            {label: "Feb", y: 155},
-            {label: "Mar", y: 170},
-            {label: "May", y: 140 },
-            {label: "Jun", y: 135 },
-            {label: "Jul", y: 190 },
-            {label: "Aug", y: 240},
-            {label: "Sep", y: 320 },      
-            {label: "Oct", y: 334 },
-            {label: "Nov", y: 380 },
-            {label: "Dec", y: 400 },
-            ]}
-    ]
+            dataPoints: [{
+                    label: "Jan",
+                    y: 100
+                },
+                {
+                    label: "Feb",
+                    y: 155
+                },
+                {
+                    label: "Mar",
+                    y: 170
+                },
+                {
+                    label: "May",
+                    y: 140
+                },
+                {
+                    label: "Jun",
+                    y: 135
+                },
+                {
+                    label: "Jul",
+                    y: 190
+                },
+                {
+                    label: "Aug",
+                    y: 240
+                },
+                {
+                    label: "Sep",
+                    y: 320
+                },
+                {
+                    label: "Oct",
+                    y: 334
+                },
+                {
+                    label: "Nov",
+                    y: 380
+                },
+                {
+                    label: "Dec",
+                    y: 400
+                },
+            ]
+        }]
     });
-chart1.render();
-chart2.render();
-chart3.render();
+    chart1.render();
+    chart2.render();
+    chart3.render();
 }
 
-function explodePie (e) {
-            if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
-                    e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
-            } else {
-                    e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
-            }
-            e.chart.render();
-    
+function explodePie(e) {
+    if (typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+        e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+    } else {
+        e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
     }
+    e.chart.render();
+
+}
 
 
 
@@ -154,24 +230,24 @@ function randomDate(start, end) {
     return moment(date).format('YYYY-MM-DD');
 }
 
-var events = ( Math.random() * 200 ).toFixed(0);
+var events = (Math.random() * 200).toFixed(0);
 var data = [];
-for (var i = 0; i < events; i++ ) {
+for (var i = 0; i < events; i++) {
     data.push({
-        count: parseInt( ( Math.random() * 200 ).toFixed(0) ),
-        date: randomDate( moment().subtract(1, 'year').subtract(5,'months').format('x'), moment().format('x') )
+        count: parseInt((Math.random() * 200).toFixed(0)),
+        date: randomDate(moment().subtract(1, 'year').subtract(5, 'months').format('x'), moment().format('x'))
     });
 }
 
 $("#cal-heatmap").CalendarHeatmap(data, {
     labels: {
-    days: true,
-    months: true,
-    custom: {
-        weekDayLabels: null,
-        monthLabels: null
-    }
-},
+        days: true,
+        months: true,
+        custom: {
+            weekDayLabels: null,
+            monthLabels: null
+        }
+    },
 });
 
 $("#heatmap-2").CalendarHeatmap(data, {
@@ -191,7 +267,7 @@ $("#heatmap-2").CalendarHeatmap(data, {
 $("#heatmap-3").CalendarHeatmap(data, {
     title: "Gradient \"electric\", labels days and custom month labels, end one year from current",
     months: 5,
-    lastYear: moment().subtract(1,'years').year(),
+    lastYear: moment().subtract(1, 'years').year(),
     coloring: "electric",
     legend: {
         align: "left",
@@ -203,12 +279,12 @@ $("#heatmap-3").CalendarHeatmap(data, {
             monthLabels: "MMM 'YY"
         }
     },
-    tooltips:{
+    tooltips: {
         show: true
     }
 });
 
-$("#heatmap-4").CalendarHeatmap( [], {
+$("#heatmap-4").CalendarHeatmap([], {
     title: "No Data"
 });
 
@@ -287,21 +363,22 @@ Highcharts.chart('contestGraph', {
     series: [{
         data: [0, 5, 10, 15, 10, 11, 9, 10, 16, 22, 18, 19, 22, 26],
         zones: [{
-            value: 0,
-            color: '#bbb'
-        }, {
-            value: 10,
-            color: '#7cb5ec'
-        }, 
-        {
-            value: 20,
-            color: '#f7a35c'
-        },
-        {
-            value: 25,
-            color: 'purple'
-        },{
-            color: 'red'
-        }]
+                value: 0,
+                color: '#bbb'
+            }, {
+                value: 10,
+                color: '#7cb5ec'
+            },
+            {
+                value: 20,
+                color: '#f7a35c'
+            },
+            {
+                value: 25,
+                color: 'purple'
+            }, {
+                color: 'red'
+            }
+        ]
     }]
 });

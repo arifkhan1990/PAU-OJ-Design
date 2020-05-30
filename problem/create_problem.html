@@ -1,66 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PAU OJ</title>
-    <link rel="stylesheet" href="../css/nav.css">
-        <link rel="stylesheet" href="../css/main_page.css">
-    <link rel="stylesheet" href="../css/problems.css">
-    <link rel="stylesheet" href="../css/create_problem.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.tiny.cloud/1/h4xlt430p2l71smuc4jhcasnvqipow0fpg77j107j9i1bpq1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/main_page.css" />
+    <link rel="stylesheet" href="../css/single_page.css" />
+    <link rel="stylesheet" href="../css/problems.css" />
+    <link rel="stylesheet" href="../css/create_problem.css" />
+    <link rel="stylesheet" href="../css/editorial.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdn.tiny.cloud/1/h4xlt430p2l71smuc4jhcasnvqipow0fpg77j107j9i1bpq1/tinymce/5/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
     <script src="../js/tinyMce.js"></script>
-</head>
-<body>
-<nav class="pauoj-navbar sticky">
-    <div class="navId">
-        <ul>
-            <div class="left-nav">
-                <a href="../main.html" class="active"><img src="..\images\logo.gif" alt="" id="logo"><span id="title">PAU OJ</span></a>
-                <li><a href="../problem/problems.html" class='active'>Problem</a></li>
-                <li><a href="../contest/contest.html">Contest</a></li>
-                <li><a href="../rank.html">Rank</a></li>
-                                <li class="dropdown"><a href="../submission.html">Submission <i class="fa fa-caret-down"></i></a>
-                <div class="dropdown-content">
-                    <a href="" value="all" style="font-size: 16px;color: #154360;">All Submission</a>
-                    <a href="" value="my_submission" style="font-size: 16px;color: #154360;">My Submission</a>
-                </div>
-                </li>
-                <li><a href="">Learn</a></li>
-                <li><a href="">Blog</a></li>
-            </div>
-            <div class="right-nav">
-                <li class="li-pos"><a href="../navigation.html"><i class="fa fa-user-plus fa-fw"></i>Sign up</a></li>
-                <li class="li-pos"><a href="../navigation.html"><i class="fa fa-sign-in fa-fw"></i>Login</a></li>
-                <!--&lt;!&ndash;<li><a href=""><i class="fa fa-user fa-fw"></i>User</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href=""><i class="fa fa-comment-alt fa-fw"></i>Messages</a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li><a href=""><i class="fa fa-bell fa-fw"></i>Notafications</a></li>&ndash;&gt;-->
-            </div>
-        </ul>
-    </div>
-</nav>
+  </head>
 
-<div class="create-problem-stage-part">
-    <div class="create-problem-form-part">
+  <body>
+    <nav class="pauoj-navbar sticky">
+      <div class="navId">
+        <ul>
+          <div class="left-nav">
+            <a href="../main.html" class="active"
+              ><img src="..\images\logo.gif" alt="" id="logo" /><span id="title"
+                >PAU OJ</span
+              ></a
+            >
+            <li>
+              <a href="../problem/problems.html" class="active">Problem</a>
+            </li>
+            <li><a href="../contest/contest.html">Contest</a></li>
+            <li><a href="../rank.html">Rank</a></li>
+            <li class="dropdown">
+              <a href="../submission.html"
+                >Submission <i class="fa fa-caret-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="" value="all" style="font-size: 16px; color: #154360;"
+                  >All Submission</a
+                >
+                <a
+                  href=""
+                  value="my_submission"
+                  style="font-size: 16px; color: #154360;"
+                  >My Submission</a
+                >
+              </div>
+            </li>
+            <li><a href="">Learn</a></li>
+            <li><a href="">Blog</a></li>
+          </div>
+          <div class="right-nav">
+            <li class="li-pos">
+              <a href="../navigation.html"
+                ><i class="fa fa-user-plus fa-fw"></i>Sign up</a
+              >
+            </li>
+            <li class="li-pos">
+              <a href="../navigation.html"
+                ><i class="fa fa-sign-in fa-fw"></i>Login</a
+              >
+            </li>
+            <!--&lt;!&ndash;<li><a href=""><i class="fa fa-user fa-fw"></i>User</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href=""><i class="fa fa-comment-alt fa-fw"></i>Messages</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href=""><i class="fa fa-bell fa-fw"></i>Notafications</a></li>&ndash;&gt;-->
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="create-problem-stage-part">
+      <div class="create-problem-form-part">
         <form id="msform">
-            <!-- progressbar -->
-            <ul id="progressbar">
-              <li class="active">Problem Basic Info</li>
-              <li>Problem Details</li>
-              <li>Sample I/0 </li>
-              <li>Test Case</li>
-              <li>Editorial & Code</li>
-            </ul>
-            <!-- fieldsets -->
-            <fieldset>
-              <h2 class="fs-title">Problem Basic Info</h2>
-              <div class="left-create-problemll-part">
+          <!-- progressbar -->
+          <ul id="progressbar">
+            <li class="active" style="padding-left: 15px;">
+              Problem Basic Info
+            </li>
+            <li>Problem Details</li>
+            <li>Sample I/0</li>
+            <li>Test Case</li>
+            <li>Editorial & Code</li>
+            <li>Review</li>
+          </ul>
+          <!-- fieldsets -->
+          <fieldset>
+            <h2 class="fs-title">Problem Basic Info</h2>
+            <div class="left-create-problemll-part">
+              <div class="label-part">
                 <label for="">Problem Category </label>
-                    <div class="input_part">
-                        <select name="problem_category" id="" style="font-size: 12px;opacity: .9;">
+              </div>
+              <div class="input_part">
+                <select
+                  name="problem_category"
+                  id=""
+                  style="font-size: 12px; opacity: 0.9;"
+                >
                   <option value="">Select Category</option>
                   <option value="beginner">Beginner</option>
                   <option value="adhoc">Adhoc</option>
@@ -71,263 +115,760 @@
                   <option value="math">Mathmatics</option>
                   <option value="string">String</option>
                   <option value="geometry">Geometry</option>
-                        </select>            
-                    </div>
+                </select>
               </div>
- 
-             <div class="left-create-problemll-part">
-               <label for="">Problem Difficulty </label>
-                    <div class="input_part">
-                        <select name="problem_difficulty" id="" style="font-size: 12px;opacity: .9;">
-                <option value="">Select Difficulty</option>
-                <option value="supper_easy">Supper Easy</option>
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">Hard</option>
-                <option value="expert">Expert</option>
-                        </select>
-                    </div>
-             </div>
-             <div class="left-create-problemll-part">
+            </div>
+
+            <div class="left-create-problemll-part">
+              <div class="label-part">
+                <label for="">Problem Difficulty </label>
+              </div>
+
+              <div class="input_part">
+                <select
+                  name="problem_difficulty"
+                  id=""
+                  style="font-size: 12px; opacity: 0.9;"
+                >
+                  <option value="">Select Difficulty</option>
+                  <option value="supper_easy">Supper Easy</option>
+                  <option value="easy">Easy</option>
+                  <option value="medium">Medium</option>
+                  <option value="hard">Hard</option>
+                  <option value="expert">Expert</option>
+                </select>
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part">
                 <label for="">Problem Tags </label>
-                    <div class="input_part">
-                        <input type="text" name="problem_tag" placeholder="Problem Tag" />
-                   </div>
               </div>
-             <div class="left-create-problemll-part">
-               <label for="" style="padding-top: 5px;">Time Limits </label>
-                    <div class="input_part">
-                        <input type="text" name="time_limit" placeholder="Time Limit" />
-                    </div>
-             </div>
-             <div class="left-create-problemll-part">
+
+              <div class="input_part">
+                <input
+                  type="text"
+                  name="problem_tag"
+                  placeholder="Problem Tag"
+                />
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part">
+                <label for="">Time Limits </label>
+              </div>
+
+              <div class="input_part">
+                <input type="text" name="time_limit" placeholder="Time Limit" />
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part">
                 <label for="" style="padding-top: 5px;">Memory Limits </label>
-                    <div class="input_part">
-                        <input type="text" name="memory_limit" placeholder="Memory Limit" />
-                    </div>
-             </div>
-             <div class="left-create-problemll-part">
+              </div>
+
+              <div class="input_part">
+                <input
+                  type="text"
+                  name="memory_limit"
+                  placeholder="Memory Limit"
+                />
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part">
                 <label for="" style="padding-top: 5px;">Problem Points </label>
-                    <div class="input_part">
-                        <select name="problem_point" id="" style="font-size: 12px;opacity: .9;">
-                <option value="">Select Points</option>
-                <option value="10">10</option>
-                <option value="15">15</option>
-                <option value="20">20</option>
-                <option value="25">25</option>
-                <option value="30">30</option>
-                <option value="35">35</option>
-                <option value="40">40</option>
-                <option value="50">55</option>
-                <option value="70">70</option>
-                <option value="80">80</option>
-                <option value="90">90</option>
-                <option value="100">100</option>
-                <option value="120">120</option>
-                        </select>
-                    </div>
-             </div>
-             <div class="left-create-problemll-part">
-                <label for="" style="padding-top: 5px;">Problem Orginal Author </label>
-                    <div class="input_part">
-                        <input type="text" name="author_name" placeholder="Orginal Author" />
-                    </div>
-             </div>
-             <div class="left-create-problemll-part">
-                <label for="" >Orginal Judge Problem</label>
-                    <div class="input_part">
-                        <select name="judge_name" id="" style="font-size: 12px;opacity: .9;">
-                <option value="">--Select judge name--</option>
-                <option value="uva">Uva</option>
-                <option value="uri">Uri</option>
-                <option value="codeforce">Codeforce</option>
-                <option value="codechef">Codechef</option>
-                <option value="hackerrank">Hackerrank</option>
-                <option value="hackerearth">Hackerearth</option>
-                <option value="atcoder">AtCoder</option>
-                <option value="spoj">Spoj</option>
-                        </select>
-                    </div>
-             </div>
-             <div class="left-create-problemll-part">
-                <label for="" >Problem Id </label>
-                    <div class="input_part">
-                        <input type="text" name="Problem_id" placeholder="Problem Id" />
-                    </div>
-             </div>
+              </div>
 
-            <!-- <div style="float: right;width:50%"> -->
-                <input type="button" name="next" class="next action-button" value="Next" style="float:right;"/>
-            <!-- </div> -->
-            </fieldset>
+              <div class="input_part">
+                <select
+                  name="problem_point"
+                  id=""
+                  style="font-size: 12px; opacity: 0.9;"
+                >
+                  <option value="">Select Points</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="25">25</option>
+                  <option value="30">30</option>
+                  <option value="35">35</option>
+                  <option value="40">40</option>
+                  <option value="50">55</option>
+                  <option value="70">70</option>
+                  <option value="80">80</option>
+                  <option value="90">90</option>
+                  <option value="100">100</option>
+                  <option value="120">120</option>
+                </select>
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part">
+                <label for="">Problem Orginal Author </label>
+              </div>
 
-            <fieldset>
-              <h2 class="fs-title">Problem Details</h2>
-              <div class="left-create-problemll-part">
+              <div class="input_part">
+                <input
+                  type="text"
+                  name="author_name"
+                  placeholder="Orginal Author"
+                />
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part">
+                <label for="">Orginal Judge Problem</label>
+              </div>
+
+              <div class="input_part">
+                <select
+                  name="judge_name"
+                  id=""
+                  style="font-size: 12px; opacity: 0.9;"
+                >
+                  <option value="">--Select judge name--</option>
+                  <option value="uva">Uva</option>
+                  <option value="uri">Uri</option>
+                  <option value="codeforce">Codeforce</option>
+                  <option value="codechef">Codechef</option>
+                  <option value="hackerrank">Hackerrank</option>
+                  <option value="hackerearth">Hackerearth</option>
+                  <option value="atcoder">AtCoder</option>
+                  <option value="spoj">Spoj</option>
+                </select>
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part">
+                <label for="">Problem Id </label>
+              </div>
+
+              <div class="input_part">
+                <input type="text" name="Problem_id" placeholder="Problem Id" />
+              </div>
+            </div>
+
+            <div style="float: right; width: 50%;">
+              <input
+                type="button"
+                name="next"
+                class="next action-button"
+                value="Next"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <h2 class="fs-title">Problem Details</h2>
+            <div class="left-create-problemll-part">
+              <div class="label-part" style="padding-top: 5px;">
                 <label for="">Problem Title </label>
-                <div class="input_part">
-                    <input type="text" name="problem_title" placeholder="Problem Title" class=""/>
-                </div>
               </div>
-              <div class="left-create-problemll-part">
-                <label for="" style="padding-top: 20px;">Problem Short Summary </label>
-                <div class="input_part">
-                    <textarea style="padding: 15px;" rows="2" id="preview" class="description span16" placeholder="Write a short summary about the challenge"></textarea>
-                </div>
+              <div class="input_part">
+                <input
+                  type="text"
+                  name="problem_title"
+                  placeholder="Problem Title"
+                  class=""
+                />
               </div>
-              <div class="left-create-problemll-part">
-                <label for="" style="padding-top: 40px;">Problem Discription </label>
-                <div class="input_part">
-                    <textarea id="problemDescription" placeholder="Write a Problem Statement">Write a Problem Statement</textarea>
-                </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div
+                class="label-part"
+                style="height: 100px !important; padding-top: 25px;"
+              >
+                <label for="">Problem Short Summary </label>
               </div>
-             <!-- <div style="float: right;width:50%"> -->
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-              <!-- </div> -->
-            </fieldset>
+              <div class="input_part" style="height: auto;">
+                <textarea
+                  style="padding: 15px;"
+                  rows="2"
+                  id="preview"
+                  class="description span16"
+                  placeholder="Write a short summary about the challenge"
+                ></textarea>
+              </div>
+            </div>
 
-            <fieldset>
-              <h2 class="fs-title" style="padding-bottom: 10px;">Sample I/0</h2>
-              <div class="left-create-problemll-part">
+            <div class="left-create-problemll-part">
+              <div
+                class="label-part2"
+                style="height: 300px !important; padding-top: 45px;"
+              >
+                <label for="">Problem Discription </label>
+              </div>
+
+              <div
+                class="input_part2"
+                style="height: 300px !important; margin-bottom: 20px;"
+              >
+                <textarea
+                  id="problemDescription"
+                  placeholder="Write a Problem Statement"
+                >
+Write a Problem Statement</textarea
+                >
+              </div>
+            </div>
+
+            <div class="left-create-problemll-part">
+              <div class="label-part2" style="padding-top: 65px;">
                 <label for="">Problem Constraints </label>
-                <div class="input_part">
-                    <textarea id="problemConstraints"></textarea>
-                </div>
               </div>
-              <div class="left-create-problemll-part">
+
+              <div class="input_part2" style="">
+                <textarea id="problemConstraints"></textarea>
+              </div>
+            </div>
+
+            <div style="float: right; width: 50%;">
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Previous"
+              />
+              <input
+                type="button"
+                name="next"
+                class="next action-button"
+                value="Next"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <h2 class="fs-title" style="padding-bottom: 10px;">Sample I/0</h2>
+            <div class="left-create-problemll-part">
+              <div class="label-part2" style="padding-top: 25px;">
                 <label for="">Problem Sample Input </label>
-                <div class="input_part">
-                    <div style="padding-bottom: 20px;"></div>
-                    <textarea id="problemSampleInput"></textarea>
-                </div>
               </div>
-              <div class="left-create-problemll-part">
+
+              <div class="input_part2" style="margin-bottom: 20px;">
+                <textarea id="problemSampleInput"></textarea>
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part2" style="padding-top: 45px;">
                 <label for="">Problem Sample Output </label>
-                <div class="input_part">
-                <div style="padding-bottom: 20px;"></div>
-                    <textarea id="problemSampleOutput">Problem Sample Output</textarea>
+              </div>
+
+              <div class="input_part2" style="margin-bottom: 20px;">
+                <textarea id="problemSampleOutput"></textarea>
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part2" style="padding-top: 75px;">
+                <label for=""
+                  >Explain Sample Input <br /><span style="padding-left: 40px;"
+                    >(Optional)</span
+                  >
+                </label>
+              </div>
+
+              <div class="input_part2">
+                <textarea id="explaineSampleInput"></textarea>
+              </div>
+            </div>
+
+            <div style="float: right; width: 50%;">
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Previous"
+              />
+              <input
+                type="button"
+                name="next"
+                class="next action-button"
+                value="Next"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="clone_form">
+            <h2 class="fs-title">Test Case</h2>
+            <div class="code-file-upload" style="height: 170px !important;">
+              <div class="file-upload-title">
+                <h1>Upload your Test case file</h1>
+                <span style="color: black;"
+                  >(Minimum 10 test case needed for problem submission)</span
+                >
+              </div>
+
+              <div class="code-upload" style="width: 100% !important;">
+                <input
+                  id="code-file-id1"
+                  type="file"
+                  name="fileToUpload"
+                  style="
+                    padding: 7px 20px !important;
+                    width: 50% !important;
+                    font-size: 15px;
+                  "
+                />
+                <input
+                  id="code-file-id2"
+                  type="submit"
+                  value="Upload"
+                  name="submit"
+                  style="
+                    width: 200px !important;
+                    padding-top: 5px;
+                    color: #fff;
+                    font-size: 15px;
+                  "
+                />
+              </div>
+            </div>
+            <div class="input_fields_wrap">
+              <div class="test-case-element">
+                <div class="left-create-problemll-part">
+                  <div class="label-part2" style="margin-top: 10px;">
+                    <label for="" style="">Test Case Input </label>
+                  </div>
+
+                  <div class="input_part2" style="">
+                    <textarea id="testCaseInput"></textarea>
+                  </div>
+                </div>
+                <div style="margin-top: 10px;"></div>
+                <div class="left-create-problemll-part">
+                  <div class="label-part2" style="margin-top: 10px;">
+                    <label for="" style="">Test Case Output </label>
+                  </div>
+
+                  <div class="input_part2">
+                    <textarea id="testCaseOutput"></textarea>
+                  </div>
+                </div>
+                <div style="margin-top: 10px;"></div>
+              </div>
+              <div class="test-case-copy-element"></div>
+              <div class="add-remove-buttons">
+                <button type="button" class="clone-test-case">Add More</button>
+                <button type="button" class="remove-test-case">Remove</button>
+              </div>
+            </div>
+            <!-- <button type="button" class="add-row" >Add More</button>  -->
+
+            <div style="float: right; width: 50%;">
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Previous"
+              />
+              <input
+                type="button"
+                name="next"
+                class="next action-button"
+                value="Next"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <h2 class="fs-title" style="padding-bottom: 10px;">
+              Editorial & Code
+            </h2>
+            <div class="left-create-problemll-part">
+              <div class="label-part2" style="padding-top: 25px;">
+                <label for="" style="">Problem Editorial </label>
+              </div>
+
+              <div class="input_part2" style="margin-bottom: 20px;">
+                <textarea id="problemEditorial"></textarea>
+              </div>
+            </div>
+            <div class="left-create-problemll-part">
+              <div class="label-part2" style="padding-top: 55px;">
+                <label style="" for="">Problem Solution Code </label>
+              </div>
+
+              <div class="input_part2">
+                <textarea id="problemSolutionCode"></textarea>
+              </div>
+            </div>
+
+            <div style="float: right; width: 50%;">
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Previous"
+              />
+              <input
+                type="button"
+                name="next"
+                class="next action-button"
+                value="Next"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <h2 class="fs-title" style="padding-bottom: 10px;">
+              Problem Review
+            </h2>
+            <div class="problem-details">
+              <h1 class="problem-title">Array Rotation</h1>
+              <span class="author">Author : GeeksforGeek</span><br \ />
+              <span class="score">Score : 15, </span>
+              <span class="difficulty"
+                >Difficulty :
+                <span style="color: forestgreen; opacity: 2;">Easy</span></span
+              ><br />
+              <span class="timeComplexity">Time : 0.6s, </span
+              ><span class="memoryComplexity">Memory : 110MB</span>
+            </div>
+            <div class="problem-description">
+              <div class="problem-body-content">
+                <div class="description-part">
+                  <p>
+                    John Watson knows of an operation called a right circular
+                    rotation on an array of integers. One rotation operation
+                    moves the last array element to the first position and
+                    shifts all remaining elements right one. To test Sherlock's
+                    abilities, Watson provides Sherlock with an array of
+                    integers. Sherlock is to perform the rotation operation a
+                    number of times then determine the value of the element at a
+                    given position.
+                  </p>
+
+                  <p>
+                    For each array, perform a number of right circular rotations
+                    and return the value of the element at a given index.
+                  </p>
+
+                  <p>
+                    For example, array a = [3,4,6], number of rotations k = 2
+                    and indices to check m = [1,2].
+                  </p>
+
+                  <p>First we perform the two rotations:</p>
+
+                  <strong>[3,4,5] -> [5,3,4] -> [4,5,3]</strong>
+
+                  <p>
+                    Now return the values from the zero-based indices 1 and 2 as
+                    indicated in the m array.
+                  </p>
+                  <strong>a[1] = 5</strong>
+                  <strong>a[2] = 3</strong>
+                  <br />
+                  <h4>Function Description</h4>
+                  <p>
+                    Complete the circularArrayRotation function in the editor
+                    below. It should return an array of integers representing
+                    the values at the specified indices.
+                  </p>
+
+                  <p>circularArrayRotation has the following parameter(s):</p>
+                  <ul class="text-sty">
+                    <li>a: an array of integers to rotate</li>
+                    <li>k: an integer, the rotation count</li>
+                    <li>
+                      queries: an array of integers, the indices to report
+                    </li>
+                  </ul>
+                  <h4>Input Format</h4>
+                  <p>
+                    The first line contains 3 space-separated integers, n , k,
+                    and q, the number of elements in the integer array, the
+                    rotation count and the number of queries.
+                  </p>
+                  <p>
+                    The second line contains n space-separated integers, where
+                    each integer i describes array element a[i] (where 0 ≤ i < n
+                    ). Each of the q subsequent lines contains a single integer
+                    denoting m, the index of the element to return from a.
+                  </p>
+                  <h4>
+                    Constraints
+                  </h4>
+                  <ul class="text-sty">
+                    <li>1 ≤ n < 10^5</li>
+                    <li>1 ≤ a[i] < 10^5</li>
+                    <li>1 ≤ k < 10^5</li>
+                    <li>1 ≤ q < 500</li>
+                    <li>0 ≤ m < n</li>
+                  </ul>
+                  <h4>Output Format</h4>
+
+                  <p>
+                    For each query, print the value of the element at index m of
+                    the rotated array on a new line.
+                  </p>
+                  <div class="problem">
+                    <table>
+                      <thead>
+                        <tr>
+                          <td>Sample Input</td>
+                          <td>Sample Output</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="division">
+                            <div class="input" style="padding: 25px;">
+                              <p>3 2 3</p>
+                              <p>1 2 3</p>
+                              <p>0</p>
+                              <p>1</p>
+                              <p>2</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="output" style="padding: 25px;">
+                              <p>2<br />3<br />1<br /></p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td class="division">
+                            <div class="input" style="padding: 25px;">
+                              <p>3 2 3</p>
+                              <p>1 2 3</p>
+                              <p>0</p>
+                              <p>1</p>
+                              <p>2</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="output" style="padding: 25px;">
+                              <p>2<br />3<br />1<br /></p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
-              <div style="padding-bottom: 20px;"></div>
-              <div style="float: right;width:50%">
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
+            </div>
+            <div class="editorial-table-body">
+              <div class="explaine-part">
+                <div class="editorial-boarder">
+                  <div class="explanation">
+                    <h2>Editorial</h2>
+                  </div>
+                  <div class="editorial-body">
+                    <div class="explaine-body">
+                      <div class="problem-explaine">
+                        <p>
+                          Given the fixed small size of the problem, brute force
+                          is fine.
+                        </p>
+                        <p>Points to note:-</p>
+                        <ol>
+                          <li>Negative values possible.</li>
+                          <li>Maximum sum can be less than zero.</li>
+                          <li>Range of element value is -9 to 9.</li>
+                          <li>Numbers to be summed for each hourglass = 7.</li>
+                          <li>Minimum possible value for sum = 7 * -9 = -63</li>
+                        </ol>
+                        <p>
+                          So we'll initialize our maxSum to -63. From there, we
+                          just calculate the sums of all hourglasses and return
+                          the maxSum. Here is an implementation of the function
+                          in Python:
+                        </p>
+                      </div>
+                      <div class="editorial-code">
+                        <!--<div class="code-part">-->
+                        <pre>
+                                                <span></span><span class="k">def</span> <span class="nf">array2D</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+                                                <span class="c1"># want to find the maximum hourglass sum</span>
+                                                <span class="c1"># minimum hourglass sum = -9 * 7 = -63</span>
+
+                                                <span class="n">maxSum</span> <span class="o">=</span> <span class="o">-</span> <span class="mi">63</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+
+            <span class="c1"># sum of top 3 elements</span>
+            <span class="n">top</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>
+
+            <span class="c1"># sum of the mid element</span>
+            <span class="n">mid</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="c1"># sum of bottom 3 elements</span>
+            <span class="n">bottom</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">][</span><span class="n">j</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>
+
+            <span class="n">hourglass</span> <span class="o">=</span> <span class="n">top</span> <span class="o">+</span> <span class="n">mid</span> <span class="o">+</span> <span class="n">bottom</span>
+
+            <span class="k">if</span> <span class="n">hourglass</span> <span class="o">&gt;</span> <span class="n">maxSum</span><span class="p">:</span>
+                <span class="n">maxSum</span> <span class="o">=</span> <span class="n">hourglass</span>
+
+    <span class="k">return</span> <span class="n">maxSum</span>
+                                            </pre>
+                        <!--</div>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tested">
+                  <h2>Solution Code</h2>
+                </div>
+                <div class="tested-body">
+                  <div class="editorial-body">
+                    <div class="explaine-body">
+                      <div class="editorial-code">
+                        <!--<div class="code-part">-->
+                        <pre>
+                                                <span></span><span class="k">def</span> <span class="nf">array2D</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+                                                <span class="c1"># want to find the maximum hourglass sum</span>
+                                                <span class="c1"># minimum hourglass sum = -9 * 7 = -63</span>
+
+                                                <span class="n">maxSum</span> <span class="o">=</span> <span class="o">-</span> <span class="mi">63</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+
+            <span class="c1"># sum of top 3 elements</span>
+            <span class="n">top</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>
+
+            <span class="c1"># sum of the mid element</span>
+            <span class="n">mid</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
+
+            <span class="c1"># sum of bottom 3 elements</span>
+            <span class="n">bottom</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">][</span><span class="n">j</span><span class="p">:</span><span class="n">j</span><span class="o">+</span><span class="mi">3</span><span class="p">])</span>
+
+            <span class="n">hourglass</span> <span class="o">=</span> <span class="n">top</span> <span class="o">+</span> <span class="n">mid</span> <span class="o">+</span> <span class="n">bottom</span>
+
+            <span class="k">if</span> <span class="n">hourglass</span> <span class="o">&gt;</span> <span class="n">maxSum</span><span class="p">:</span>
+                <span class="n">maxSum</span> <span class="o">=</span> <span class="n">hourglass</span>
+
+    <span class="k">return</span> <span class="n">maxSum</span>
+                                            </pre>
+                        <!--</div>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </fieldset>
-
-            <fieldset>
-                <h2 class="fs-title">Test Case</h2>
-                <div class="left-create-problemll-part">
-                    <label for="">Problem Category </label>
-                    <div class="input_part">
-                        <input type="text" name="fname" placeholder="First Name" />
-                    </div>
-                </div>
-                <div class="left-create-problemll-part">
-                    <label for="">Problem Category </label>
-                    <div class="input_part">
-                        <input type="text" name="lname" placeholder="Last Name" />
-                    </div>
-                </div>
-                <div class="left-create-problemll-part">
-                    <label for="">Problem Category </label>
-                    <div class="input_part">
-                        <input type="text" name="phone" placeholder="Phone" />
-                    </div>
-                </div>
-                <div class="left-create-problemll-part">
-                    <label for="">Problem Category </label>
-                    <div class="input_part">
-                        <textarea name="address" placeholder="Address"></textarea>
-                    </div>
-                </div>
-                <div style="float: right;width:50%">
-                        <input type="button" name="previous" class="previous action-button" value="Previous" />
-                        <input type="button" name="next" class="next action-button" value="Next" />
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <h2 class="fs-title" style="padding-bottom: 10px;">Editorial & Code</h2>
-                <div class="left-create-problemll-part">
-                    <label for="">Problem Editorial </label>
-                    <div class="input_part">
-                        <textarea id="problemEditorial"></textarea>
-                    </div>
-                </div>
-                <div class="left-create-problemll-part">
-                    <label for="">Problem Solution Code </label>
-                    <div class="input_part">
-                    <div style="padding-bottom: 20px;"></div>
-                        <textarea id="problemSolutionCode"></textarea>
-                    </div>
-                </div>
-                <div style="padding-bottom: 20px;"></div>
-                <div style="float: right; width:50%">
-                        <input type="button" name="previous" class="previous action-button" value="Previous" />
-                        <input type="button" name="next" class="action-button" value="Submit" />
-                </div>
-            </fieldset>
+            </div>
+            <div style="padding-bottom: 20px;"></div>
+            <div style="float: right; width: 50%;">
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Previous"
+              />
+              <input
+                type="button"
+                name="next"
+                class="action-button"
+                value="Submit"
+              />
+            </div>
+          </fieldset>
         </form>
+      </div>
     </div>
-</div>
 
-<footer class="pauoj-footer">
-    <h1>PRIMEASIA UNIVERSITY ONLINE JUDGE</h1>
-    <div class="main-footer">
+    <footer class="pauoj-footer">
+      <h1>PRIMEASIA UNIVERSITY ONLINE JUDGE</h1>
+      <div class="main-footer">
         <div class="footer-content left-footer">
-            <h3>Services</h3>
-            <a href="">Problem</a>
-            <a href="">Rank</a>
-            <a href="">Contest</a>
-            <a href="">Blog</a>
-            <a href="">Learn</a>
+          <h3>Services</h3>
+          <a href="">Problem</a>
+          <a href="">Rank</a>
+          <a href="">Contest</a>
+          <a href="">Blog</a>
+          <a href="">Learn</a>
         </div>
         <div class="footer-content middle-footer">
-            <h3>Stay With Us</h3>
-            <div class="footer-row">
-                <div class="social-icon">
-                    <a href="https://github.com/arifkhan1990" class="github" target="_blank"><i class="fa fa-github fa-fw"></i></a>
-                </div>
-                <div class="social-icon">
-                    <a href="" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                </div>
-                <div class="social-icon">
-                    <a href="" class="linkedin"><i class="fa fa-linkedin fa-fw"></i></a>
-                </div>
-                <div class="social-icon">
-                    <a href="" class="youtube"><i class="fa fa-youtube fa-fw"></i></a>
-                </div>
-                <div class="social-icon">
-                    <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
-                </div>
+          <h3>Stay With Us</h3>
+          <div class="footer-row">
+            <div class="social-icon">
+              <a
+                href="https://github.com/arifkhan1990"
+                class="github"
+                target="_blank"
+                ><i class="fa fa-github fa-fw"></i
+              ></a>
             </div>
-            <div class="footer-row">
-                <div class="social-icon">
-                    <a href="" class="pinterest"><i class="fa fa-pinterest fa-fw"></i></a>
-                </div>
-                <div class="social-icon">
-                    <a href="https://plus.google.com/u/0/+ArifKhanArifKhan77morichika" target="_blank" class="google-plus"><i class="fa fa-google-plus fa-fw"></i></a>
-                </div>
-                <div class="social-icon">
-                    <a href="" class="instagram"><i class="fa fa-instagram fa-fw"></i></a>
-                </div>
+            <div class="social-icon">
+              <a href="" class="facebook"
+                ><i class="fa fa-facebook fa-fw"></i
+              ></a>
             </div>
+            <div class="social-icon">
+              <a href="" class="linkedin"
+                ><i class="fa fa-linkedin fa-fw"></i
+              ></a>
+            </div>
+            <div class="social-icon">
+              <a href="" class="youtube"><i class="fa fa-youtube fa-fw"></i></a>
+            </div>
+            <div class="social-icon">
+              <a href="" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+            </div>
+          </div>
+          <div class="footer-row">
+            <div class="social-icon">
+              <a href="" class="pinterest"
+                ><i class="fa fa-pinterest fa-fw"></i
+              ></a>
+            </div>
+            <div class="social-icon">
+              <a
+                href="https://plus.google.com/u/0/+ArifKhanArifKhan77morichika"
+                target="_blank"
+                class="google-plus"
+                ><i class="fa fa-google-plus fa-fw"></i
+              ></a>
+            </div>
+            <div class="social-icon">
+              <a href="" class="instagram"
+                ><i class="fa fa-instagram fa-fw"></i
+              ></a>
+            </div>
+          </div>
         </div>
         <div class="footer-content right-footer">
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</p>
+          <h3>About Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            sit amet pretium urna. Vivamus venenatis velit nec neque ultricies,
+            eget elementum magna tristique.
+          </p>
         </div>
+      </div>
+    </footer>
+    <div class="sp-footer">
+      <p>this site develop by Arif khan &copy; 2018. All rights reserved.</p>
     </div>
-</footer>
-<div class="sp-footer">
-    <p> this site develop by Arif khan &copy; 2018. All rights reserved.</p>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
-<script src="../js/create_problem.js"></script>
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+    <script src="../js/create_problem.js"></script>
+    <script>
+      $('.input_fields_wrap').on('click', '.remove-test-case', function () {
+        $('.remove-test-case')
+          .closest('.input_fields_wrap')
+          .find('.test-case-element')
+          .not(':first')
+          .last()
+          .remove();
+      });
+      $('.input_fields_wrap').on('click', '.clone-test-case', function () {
+        $('.clone-test-case')
+          .closest('.input_fields_wrap')
+          .find('.test-case-element')
+          .first()
+          .clone()
+          .appendTo('.test-case-copy-element');
+      });
+    </script>
+  </body>
 </html>
