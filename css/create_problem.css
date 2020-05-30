@@ -41,7 +41,7 @@ body {
 	display: none;
 }
 /*inputs*/
-#msform input,#msform select, #msform textarea {
+#msform input,#msform select, #msform textarea, .add-row, .remove-row {
 	/* padding: 15px; */
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -51,7 +51,12 @@ body {
 	font-family: montserrat;
 	color: #2C3E50;
 	font-size: 13px;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
+	height: 45px;
+}
+
+.description {
+	height: 100px!important;
 }
 /*buttons*/
 #msform .action-button {
@@ -67,6 +72,38 @@ body {
 }
 #msform .action-button:hover, #msform .action-button:focus,#msform .action-button:hover {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+#msform .add-row {
+	width: 100px;
+	background: rgb(23, 84, 124);
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	float: left;
+}
+#msform .add-row:hover, #msform .add-row:focus,#msform .add-row:hover {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(39, 109, 174);
+}
+
+#msform .remove-row {
+	width: 100px;
+	background: rgb(212, 41, 41);
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	float: left;
+}
+#msform .remove-row:hover, #msform .remove-row:focus,#msform .remove-row:hover {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(145, 16, 16);
 }
 /*headings*/
 .fs-title {
@@ -93,7 +130,7 @@ body {
     color:white;
     text-transform: uppercase;
     font-size: 12px;
-    width: 20%;
+    width: 16.5%;
     float: left;
     position: relative;
 }
@@ -157,15 +194,34 @@ body {
 	label {
 		float: left;
 		font-size: 16px;
-		margin-top: 25px;
+		margin-top: 15px;
 		font-weight: 500;
 		color:#76819ded;
-		margin-bottom: 20px;
-		width: 25%;
+		/* margin-bottom: 20px; */
+		/* width: 25%; */
 		text-align: left;
 	}
 
 	.input_part {
 		width:75%;
 		float: right;
+		height: 60px;
+	}
+
+	.label-part {
+		float: left;
+		width: 25%;
+		height: 60px;
+	}
+
+	.label-part2 {
+		float: left;
+		width: 25%;
+		height: 200px;
+	}
+
+	.input_part2 {
+		width:75%;
+		float: right;
+		height: 200px;
 	}

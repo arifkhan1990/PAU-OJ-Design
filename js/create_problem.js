@@ -9,9 +9,9 @@ $(".next").click(function(){
 	if(animating) return false;
 	animating = true;
 	
-	current_fs = $(this).parent();
-	next_fs = $(this).parent().next();
-	console.log(next_fs);
+	current_fs = $(this).parent().parent();
+	next_fs = $(this).parent().parent().next();
+	console.log(current_fs);
 	//activate next step on progressbar using the index of next_fs
 	$("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 	
@@ -47,8 +47,8 @@ $(".previous").click(function(){
 	if(animating) return false;
 	animating = true;
 	
-	current_fs = $(this).parent();
-	previous_fs = $(this).parent().prev();
+	current_fs = $(this).parent().parent();
+	previous_fs = $(this).parent().parent().prev();
 	
 	//de-activate current step on progressbar
 	$("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
@@ -80,4 +80,17 @@ $(".previous").click(function(){
 
 $(".submit").click(function(){
 	return false;
-})
+});
+
+
+$(document).ready(function(){
+	$( ".add-row" ).click(function(){
+	   var $clone = $( "div.input_fields_wrap" ).first().clone();
+	   $clone.append( "<button type='button' class='remove-row'>Remove</button>" );
+	   $clone.insertBefore( ".add-row" );
+	});
+   
+	$( ".add-row" ).on("click", ".remove-row", function(){
+	   $(this).parent().remove();
+    });
+});
