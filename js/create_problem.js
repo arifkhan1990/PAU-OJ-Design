@@ -6,11 +6,6 @@ var animating; //flag to prevent quick multi-click glitches
 $('.next').click(function () {
 	if (animating) return false;
 	animating = true;
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> e0ed42135fd43533dbaa53ae0390b265d0c1b1d1
 	current_fs = $(this).parent().parent();
 	next_fs = $(this).parent().parent().next();
 	console.log(current_fs);
@@ -53,17 +48,10 @@ $('.next').click(function () {
 $('.previous').click(function () {
 	if (animating) return false;
 	animating = true;
-<<<<<<< HEAD
 
 	current_fs = $(this).parent().parent();
 	previous_fs = $(this).parent().parent().prev();
 
-=======
-	
-	current_fs = $(this).parent().parent();
-	previous_fs = $(this).parent().parent().prev();
-	
->>>>>>> e0ed42135fd43533dbaa53ae0390b265d0c1b1d1
 	//de-activate current step on progressbar
 	$('#progressbar li')
 		.eq($('fieldset').index(current_fs))
@@ -103,44 +91,4 @@ $('.previous').click(function () {
 
 $('.submit').click(function () {
 	return false;
-});
-
-<<<<<<< HEAD
-$(document).ready(function () {
-
-	$('.input_fields_wrap').on('click', '.remove', function () {
-		$('.remove').find('.test-case-element').not(':first').last().remove();
-	});
-
-	$('.input_fields_wrap').on('click', '.clone', function () {
-		$('.clone').find('.test-case-element').first().clone().appendTo('.test-case-copy-element');
-	});
-	// $('.add-row').click(function () {
-	// 	var $clone = $('div.input_fields_wrap').first().clone();
-	// 	$clone.append("<button type='button' class='remove-row'>Remove</button>");
-	// 	$clone.insertBefore('.add-row');
-	// });
-
-	// $(".remove-row").click(function () {
-	// 	console.log("hi");
-	// 	$(this).parent().remove();
-	// });
-
-	// $('.remove-row').on('click', '.remove-row', function () {
-	// 	console.log('hi');
-	// 	$(this).parent().remove();
-	// });
-=======
-
-$(document).ready(function(){
-	$( ".add-row" ).click(function(){
-	   var $clone = $( "div.input_fields_wrap" ).first().clone();
-	   $clone.append( "<button type='button' class='remove-row'>Remove</button>" );
-	   $clone.insertBefore( ".add-row" );
-	});
-   
-	$( ".add-row" ).on("click", ".remove-row", function(){
-	   $(this).parent().remove();
-    });
->>>>>>> e0ed42135fd43533dbaa53ae0390b265d0c1b1d1
 });
