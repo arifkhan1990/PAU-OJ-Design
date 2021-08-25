@@ -48,11 +48,15 @@ body {
 }
 
 /*inputs*/
+<<<<<<< HEAD
 #msform input,
 #msform select,
 #msform textarea,
 .add-row,
 .remove-row {
+=======
+#msform input,#msform select, #msform textarea, .add-row, .remove-row {
+>>>>>>> e0ed42135fd43533dbaa53ae0390b265d0c1b1d1
 	/* padding: 15px; */
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -67,7 +71,11 @@ body {
 }
 
 .description {
+<<<<<<< HEAD
 	height: 100px !important;
+=======
+	height: 100px!important;
+>>>>>>> e0ed42135fd43533dbaa53ae0390b265d0c1b1d1
 }
 
 /*buttons*/
@@ -101,10 +109,14 @@ body {
 	margin: 10px 5px;
 	float: left;
 }
+<<<<<<< HEAD
 
 #msform .add-row:hover,
 #msform .add-row:focus,
 #msform .add-row:hover {
+=======
+#msform .add-row:hover, #msform .add-row:focus,#msform .add-row:hover {
+>>>>>>> e0ed42135fd43533dbaa53ae0390b265d0c1b1d1
 	box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(39, 109, 174);
 }
 
@@ -120,6 +132,7 @@ body {
 	margin: 10px 5px;
 	float: left;
 }
+<<<<<<< HEAD
 
 #msform .remove-row:hover,
 #msform .remove-row:focus,
@@ -127,6 +140,11 @@ body {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(145, 16, 16);
 }
 
+=======
+#msform .remove-row:hover, #msform .remove-row:focus,#msform .remove-row:hover {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px rgb(145, 16, 16);
+}
+>>>>>>> e0ed42135fd43533dbaa53ae0390b265d0c1b1d1
 /*headings*/
 .fs-title {
 	font-size: 15px;
@@ -151,6 +169,7 @@ body {
 }
 
 #progressbar li {
+<<<<<<< HEAD
 	list-style-type: none;
 	color: white;
 	text-transform: uppercase;
@@ -158,6 +177,15 @@ body {
 	width: 16.5%;
 	float: left;
 	position: relative;
+=======
+    list-style-type: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 16.5%;
+    float: left;
+    position: relative;
+>>>>>>> e0ed42135fd43533dbaa53ae0390b265d0c1b1d1
 }
 
 #progressbar li:before {
@@ -226,6 +254,7 @@ body {
 	box-shadow: 0 0 3px green !important;
 	-moz-box-shadow: 0 0 3px green !important;
 	-webkit-box-shadow: 0 0 3px green !important;
+<<<<<<< HEAD
 }
 
 .left-create-problemll-part {
@@ -285,3 +314,43 @@ label {
 	float: right;
 	background: rgb(207, 27, 27);
 }
+=======
+	}
+	.left-create-problemll-part {
+		display: block;
+	}
+	label {
+		float: left;
+		font-size: 16px;
+		margin-top: 15px;
+		font-weight: 500;
+		color:#76819ded;
+		/* margin-bottom: 20px; */
+		/* width: 25%; */
+		text-align: left;
+	}
+
+	.input_part {
+		width:75%;
+		float: right;
+		height: 60px;
+	}
+
+	.label-part {
+		float: left;
+		width: 25%;
+		height: 60px;
+	}
+
+	.label-part2 {
+		float: left;
+		width: 25%;
+		height: 200px;
+	}
+
+	.input_part2 {
+		width:75%;
+		float: right;
+		height: 200px;
+	}
+>>>>>>> e0ed42135fd43533dbaa53ae0390b265d0c1b1d1
